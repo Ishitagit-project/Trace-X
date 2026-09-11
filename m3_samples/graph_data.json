@@ -1,0 +1,82 @@
+{
+  "nodes": [
+    {
+      "id": "989972a7cb0b806b665fafc84147c8cb",
+      "type": "email"
+    },
+    {
+      "id": "attack.com",
+      "type": "domain"
+    },
+    {
+      "id": "199e794fc6a25e42fe9f10c57672d038",
+      "type": "email"
+    },
+    {
+      "id": "1b33daa7e91462db250d87f93c138375",
+      "type": "email"
+    },
+    {
+      "id": "31956a8d9e1a3108549c521016c4c775",
+      "type": "email"
+    },
+    {
+      "id": "65bcbf395fa66dcc2e9f515d5e55a8fd",
+      "type": "email"
+    },
+    {
+      "id": "73337be073af245c7b4678a7555d7f51",
+      "type": "email"
+    },
+    {
+      "id": "a1eaf75f945c48c121b78cdd5b9742d4",
+      "type": "email"
+    },
+    {
+      "id": "f46c07329f71c52d4145d1c1532804b6",
+      "type": "email"
+    }
+  ],
+  "edges": [
+    {
+      "source": "989972a7cb0b806b665fafc84147c8cb",
+      "target": "attack.com",
+      "relationship": "contains_ioc"
+    },
+    {
+      "source": "attack.com",
+      "target": "199e794fc6a25e42fe9f10c57672d038",
+      "relationship": "shared_ioc"
+    },
+    {
+      "source": "attack.com",
+      "target": "1b33daa7e91462db250d87f93c138375",
+      "relationship": "shared_ioc"
+    },
+    {
+      "source": "attack.com",
+      "target": "31956a8d9e1a3108549c521016c4c775",
+      "relationship": "shared_ioc"
+    },
+    {
+      "source": "attack.com",
+      "target": "65bcbf395fa66dcc2e9f515d5e55a8fd",
+      "relationship": "shared_ioc"
+    },
+    {
+      "source": "attack.com",
+      "target": "73337be073af245c7b4678a7555d7f51",
+      "relationship": "shared_ioc"
+    },
+    {
+      "source": "attack.com",
+      "target": "a1eaf75f945c48c121b78cdd5b9742d4",
+      "relationship": "shared_ioc"
+    },
+    {
+      "source": "attack.com",
+      "target": "f46c07329f71c52d4145d1c1532804b6",
+      "relationship": "shared_ioc"
+    }
+  ]
+}
