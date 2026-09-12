@@ -77,7 +77,7 @@ const iocSchema = new mongoose.Schema(
     // ── Containment status ────────────────────────────────────────────
     status: {
       type: String,
-      enum: ["active", "blocked", "whitelisted"],
+      enum: ["active", "blocked", "whitelisted", "watchlisted", "monitored"],
       default: "active",
       index: true,
     },

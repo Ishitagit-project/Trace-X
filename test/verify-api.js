@@ -9,7 +9,8 @@ require("dotenv").config();
 async function runTests() {
   console.log("🧪 Starting End-to-End API verification...");
 
-  await mongoose.connect(process.env.MONGODB_URI);
+  const mongoUri = process.env.MONGODB_URI || "mongodb://localhost:27017/email_threat_platform";
+  await mongoose.connect(mongoUri);
   console.log(" Connected to MongoDB");
 
   const server = app.listen(5001);

@@ -103,10 +103,21 @@ def _hostname_matches(claimed_host, resolved_host):
     return c == r or c.endswith("." + r) or r.endswith("." + c)
 
 
-def _reverse_dns(ip):
+_DNS_CACHE = {}
+
+
+def _reverse_dns(ip: str):
+    if not ip:
+        return None
+    if ip in _DNS_CACHE:
+        return _DNS_CACHE[ip]
     try:
-        return socket.gethostbyaddr(ip)[0]
+        socket.setdefaulttimeout(2.0)
+        res = socket.gethostbyaddr(ip)[0]
+        _DNS_CACHE[ip] = res
+        return res
     except Exception:
+        _DNS_CACHE[ip] = None
         return None
 
 

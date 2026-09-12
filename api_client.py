@@ -54,3 +54,20 @@ def update_ioc_geolocation(ioc_id: str, payload: dict) -> dict:
     )
     resp.raise_for_status()
     return resp.json() if resp.content else {}
+
+
+def get_ioc(ioc_type: str, value: str) -> dict:
+    """GET /api/iocs?type=:type&value=:value — look up an existing IOC record by value."""
+    try:
+        resp = requests.get(
+            _url("/api/iocs"),
+            params={"type": ioc_type, "value": value},
+            headers=_auth_headers(),
+            timeout=10,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        items = data.get("data", []) if isinstance(data, dict) else []
+        return items[0] if items else None
+    except Exception:
+        return None

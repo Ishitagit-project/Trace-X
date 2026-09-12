@@ -73,7 +73,7 @@ exports.getAllIOCs = async (req, res, next) => {
     // Filter by IOC type (ip, domain, url, email, hash)
     if (type) filter.type = type;
 
-    // Filter by IOC status (active, blocked, whitelisted)
+    // Filter by IOC status (active, blocked, whitelisted, watchlisted, monitored)
     if (status) filter.status = status;
 
     // Filter by value — partial match (e.g. ?value=attack)

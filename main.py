@@ -237,8 +237,12 @@ def run_via_api(email_id: str):
     for ip, geo in ips_to_patch:
         ioc_id = ioc_map.get(ip)
         if not ioc_id:
-            print(f"[Member1] No known IOC id for {ip} in this email's response — "
-                  f"skipping PATCH (confirm with M2 how IOC ids are exposed).")
+            fetched_ioc = api_client.get_ioc("ip", ip)
+            if fetched_ioc:
+                ioc_id = fetched_ioc.get("_id") or fetched_ioc.get("id")
+
+        if not ioc_id:
+            print(f"[Member1] No IOC record found for IP {ip} — skipping PATCH.")
             continue
         payload = adapters.build_ioc_payload(geo, report["flag_status"])
         api_client.update_ioc_geolocation(ioc_id, payload)
