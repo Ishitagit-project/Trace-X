@@ -1,0 +1,56 @@
+
+EMAIL IOC EXTRACTION OUTPUT
+
+1. email_id
+   - Unique identifier of the email file.
+
+2. sender
+   - Sender email address(es).
+
+3. receiver
+   - Receiver email address(es).
+
+4. subject
+   - Email subject.
+
+5. reply_to
+   - Reply-To email address(es), if present.
+
+6. urls
+   - URLs extracted from email body/content.
+
+7. domains
+   - Domains extracted from URLs and email addresses.
+
+8. ips
+   - IP addresses found in email content.
+
+9. attachments
+   - Attachment filename and content type.
+
+10. security_headers
+    - Received
+    - Authentication-Results
+    - DKIM-Signature
+    - Received-SPF
+    - Return-Path
+    - Message-ID
+
+11. suspicious_indicators
+    - Suspicious patterns detected during extraction.
+    - Examples: javascript, script_tag, embed_tag, base64_content
+
+
+IOC PIVOTING OUTPUTS
+
+ioc_relationships.json
+- Connects Email -> IOC
+- IOC type can be URL, domain, or IP
+
+ioc_pivot.json
+- Connects IOC -> related Email IDs
+
+graph_data.json
+- Contains nodes and edges for visualization.
+- Example relationship:
+  Email -> Domain -> Related Emails

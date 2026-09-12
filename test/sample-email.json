@@ -1,0 +1,174 @@
+{
+  "emailId": "<abc123.phish@malicious-server.com>",
+  "sender": {
+    "address": "security-alert@micros0ft-login.com",
+    "name": "Microsoft Security Team",
+    "domain": "micros0ft-login.com"
+  },
+  "receiver": [
+    {
+      "address": "john.doe@company.com",
+      "name": "John Doe",
+      "domain": "company.com"
+    }
+  ],
+  "cc": [
+    {
+      "address": "jane.smith@company.com",
+      "name": "Jane Smith",
+      "domain": "company.com"
+    }
+  ],
+  "replyTo": {
+    "address": "no-reply@micros0ft-login.com",
+    "name": "",
+    "domain": "micros0ft-login.com"
+  },
+  "returnPath": "bounce@micros0ft-login.com",
+  "subject": "⚠️ Urgent: Your account has been compromised - Verify Now",
+  "date": "2026-09-10T08:30:00.000Z",
+
+  "rawFile": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sizeBytes": 15234,
+    "storagePath": "/uploads/eml/abc123.eml"
+  },
+
+  "headers": {
+    "receivedChain": [
+      {
+        "hopIndex": 0,
+        "fromHost": "mail-out.malicious-server.com",
+        "byHost": "mx1.company.com",
+        "ip": "185.220.101.5",
+        "protocol": "ESMTP",
+        "timestamp": "2026-09-10T08:30:15.000Z",
+        "delaySeconds": 0,
+        "geo": {
+          "country": "Russia",
+          "countryCode": "RU",
+          "city": "Moscow",
+          "asn": 49505,
+          "org": "Suspicious Hosting LLC"
+        }
+      },
+      {
+        "hopIndex": 1,
+        "fromHost": "mx1.company.com",
+        "byHost": "internal-relay.company.com",
+        "ip": "10.0.0.5",
+        "protocol": "ESMTPS",
+        "timestamp": "2026-09-10T08:30:16.000Z",
+        "delaySeconds": 1
+      }
+    ],
+    "originatingIp": {
+      "ip": "185.220.101.5",
+      "sourceHeader": "X-Originating-IP",
+      "isPrivate": false,
+      "geo": {
+        "country": "Russia",
+        "countryCode": "RU",
+        "city": "Moscow",
+        "asn": 49505,
+        "org": "Suspicious Hosting LLC",
+        "isp": "DarkHost Networks",
+        "isVpn": false,
+        "isTor": true,
+        "isProxy": false
+      }
+    },
+    "authentication": {
+      "spf": {
+        "result": "fail",
+        "domain": "micros0ft-login.com",
+        "clientIp": "185.220.101.5"
+      },
+      "dkim": [
+        {
+          "result": "fail",
+          "domain": "micros0ft-login.com",
+          "selector": "default"
+        }
+      ],
+      "dmarc": {
+        "result": "fail",
+        "policy": "none",
+        "alignedSpf": false,
+        "alignedDkim": false
+      }
+    },
+    "client": {
+      "xMailer": "PhishKit v3.2",
+      "xPriority": "1"
+    },
+    "rawHeaders": {}
+  },
+
+  "body": {
+    "plainText": "Dear User, Your Microsoft 365 account has been compromised. Click here to verify: http://micros0ft-login.com/verify?id=victim123",
+    "html": "<html><body><p>Dear User,</p><p>Your Microsoft 365 account has been <b>compromised</b>.</p><a href='http://micros0ft-login.com/verify?id=victim123'>Click here to verify</a></body></html>",
+    "cleanText": "Dear User, Your Microsoft 365 account has been compromised. Click here to verify.",
+    "hasHtml": true,
+    "detectedLanguage": "en"
+  },
+
+  "attachments": [
+    {
+      "attachmentId": "att-001",
+      "filename": "Security_Update.pdf.exe",
+      "fileExtension": ".exe",
+      "declaredMimeType": "application/pdf",
+      "detectedMimeType": "application/x-msdownload",
+      "mimeMismatch": true,
+      "sizeBytes": 245760,
+      "hashes": {
+        "md5": "d41d8cd98f00b204e9800998ecf8427e",
+        "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "sha256": "a948904f2f0f479b8f8564e9e4f7f4e3c2d1a0b9c8d7e6f5a4b3c2d1e0f9a8b7"
+      },
+      "entropy": 7.89,
+      "hasMacros": false,
+      "isArchive": false
+    }
+  ],
+
+  "extractedIOCs": {
+    "urls": [
+      {
+        "rawUrl": "http://micros0ft-login.com/verify?id=victim123",
+        "domain": "micros0ft-login.com",
+        "scheme": "http",
+        "isShortened": false,
+        "displayText": "Click here to verify",
+        "isSpoofedAnchor": true
+      }
+    ],
+    "domains": [
+      {
+        "domain": "micros0ft-login.com",
+        "source": "from_header",
+        "tld": "com"
+      },
+      {
+        "domain": "micros0ft-login.com",
+        "source": "url",
+        "tld": "com"
+      }
+    ],
+    "ips": [
+      {
+        "ip": "185.220.101.5",
+        "ipVersion": 4,
+        "source": "received_hop",
+        "geo": {
+          "country": "Russia",
+          "countryCode": "RU",
+          "city": "Moscow",
+          "asn": 49505,
+          "org": "Suspicious Hosting LLC"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "starting_email": "989972a7cb0b806b665fafc84147c8cb",
+  "starting_iocs": [
+    {
+      "email_id": "989972a7cb0b806b665fafc84147c8cb",
+      "ioc": "http://ffvh.jv7x6u6cojpdpkjh611hojj1.yuytyu.hk",
+      "ioc_type": "url"
+    },
+    {
+      "email_id": "989972a7cb0b806b665fafc84147c8cb",
+      "ioc": "anheuser-busch.com",
+      "ioc_type": "domain"
+    },
+    {
+      "email_id": "989972a7cb0b806b665fafc84147c8cb",
+      "ioc": "attack.com",
+      "ioc_type": "domain"
+    },
+    {
+      "email_id": "989972a7cb0b806b665fafc84147c8cb",
+      "ioc": "ffvh.jv7x6u6cojpdpkjh611hojj1.yuytyu.hk",
+      "ioc_type": "domain"
+    }
+  ],
+  "first_hop_emails": [
+    "199e794fc6a25e42fe9f10c57672d038",
+    "1b33daa7e91462db250d87f93c138375",
+    "31956a8d9e1a3108549c521016c4c775",
+    "65bcbf395fa66dcc2e9f515d5e55a8fd",
+    "73337be073af245c7b4678a7555d7f51",
+    "a1eaf75f945c48c121b78cdd5b9742d4",
+    "f46c07329f71c52d4145d1c1532804b6"
+  ],
+  "first_hop_iocs": [
+    "123mail.cl",
+    "7x24.sunshinehui.com",
+    "attack.com",
+    "enron.com",
+    "http://7x24.sunshinehui.com/mnbv/csi.gif",
+    "http://ourworld.cs.com/v3xxxx/v3.gif",
+    "http://www.nrl-nbr.no/forum/cache/abort.php",
+    "mdbe.com",
+    "ourworld.cs.com",
+    "plg.uwaterloo.ca",
+    "quinnemanuel.com",
+    "www.nrl-nbr.no"
+  ],
+  "second_hop_emails": [
+    "042ab293afb526f43573000fb4fe9035",
+    "2111046743ab7f2840be40800e35cd9f",
+    "2aee4892e334fc13d3763bdb558d998c",
+    "31428a2ea7ff16c2062f923a6fd0e48d",
+    "35749c81f0d57cf29b1dd5eee017de10",
+    "37a5f919ddf52ebfcea47b547a06adac",
+    "52e7d884a0365409d617e62a396365db",
+    "59383a4a7418d7e5f24aa1a200889c31",
+    "7048be8afb386131ab8ec3f0a694d560",
+    "7266c16c09ba169c654e8806d39c09fb",
+    "75097809fbc82c1a42417a739385a071",
+    "75678d21a60db7bbcf06d3c5a90f80bc",
+    "7b2f576983289d1f9044527fded84ae0",
+    "850d6dffefbf75413076bdf7c6194b3f",
+    "969d7598acfda674a5a5dace339d62e1",
+    "9c69b4a1fcbbbb4dff9daff01e964a86",
+    "ac0269150c4ecc9618b903b8b9e7b122",
+    "b1451fd8af4db344b18685a0d4d4dcc4",
+    "bb8b8b5a40d60fea3ef57894b0d4ebf7",
+    "c54ef468cb31fce5b8d2cf266e01d4a9",
+    "ce56ad70460807cdb3df3553c8b9cbb0",
+    "cf45f66e0be9644c3d01d5761db1586f",
+    "d520e3e9111f779cddec9bac4830a311",
+    "dd46249c66aea88b69424469e17a3d24",
+    "e66d8382c230c6fe72b6f38b773de7a2",
+    "f0b9ecc6869b31b80acccee9db0e2eb8"
+  ]
+}

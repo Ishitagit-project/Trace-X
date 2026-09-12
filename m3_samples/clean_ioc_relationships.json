@@ -1,0 +1,1167 @@
+[
+  {
+    "email_id": "d520e3e9111f779cddec9bac4830a311",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "f0f3e4ef8878a9c515c9deb1f052a7c4",
+    "ioc": "http://ps.skumeg.hk/?a=698-11009",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "f0f3e4ef8878a9c515c9deb1f052a7c4",
+    "ioc": "noaa.gov",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "f0f3e4ef8878a9c515c9deb1f052a7c4",
+    "ioc": "ps.skumeg.hk",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "f0f3e4ef8878a9c515c9deb1f052a7c4",
+    "ioc": "yahoo.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "75678d21a60db7bbcf06d3c5a90f80bc",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "75678d21a60db7bbcf06d3c5a90f80bc",
+    "ioc": "speedy.uwaterloo.ca",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "989972a7cb0b806b665fafc84147c8cb",
+    "ioc": "http://ffvh.jv7x6u6cojpdpkjh611hojj1.yuytyu.hk",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "989972a7cb0b806b665fafc84147c8cb",
+    "ioc": "anheuser-busch.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "989972a7cb0b806b665fafc84147c8cb",
+    "ioc": "attack.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "989972a7cb0b806b665fafc84147c8cb",
+    "ioc": "ffvh.jv7x6u6cojpdpkjh611hojj1.yuytyu.hk",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "2c672ae0a87d0fb2f34701e7f4240685",
+    "ioc": "http://dfn.trainingcampin.com",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "2c672ae0a87d0fb2f34701e7f4240685",
+    "ioc": "cfisd.net",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "2c672ae0a87d0fb2f34701e7f4240685",
+    "ioc": "dfn.trainingcampin.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "2c672ae0a87d0fb2f34701e7f4240685",
+    "ioc": "email.msn.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "2c672ae0a87d0fb2f34701e7f4240685",
+    "ioc": "mindspring.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "2c672ae0a87d0fb2f34701e7f4240685",
+    "ioc": "wald.ucdavis.edu",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "7b2f576983289d1f9044527fded84ae0",
+    "ioc": "http://placepharms.com",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "7b2f576983289d1f9044527fded84ae0",
+    "ioc": "broadwing.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "7b2f576983289d1f9044527fded84ae0",
+    "ioc": "earthlink.net",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "7b2f576983289d1f9044527fded84ae0",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "7b2f576983289d1f9044527fded84ae0",
+    "ioc": "placepharms.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "7b2f576983289d1f9044527fded84ae0",
+    "ioc": "snapfish.rs88.net",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "e66d8382c230c6fe72b6f38b773de7a2",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "37a5f919ddf52ebfcea47b547a06adac",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "37a5f919ddf52ebfcea47b547a06adac",
+    "ioc": "figuiere.net",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "a1eaf75f945c48c121b78cdd5b9742d4",
+    "ioc": "http://7x24.sunshinehui.com/mnbv/csi.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "a1eaf75f945c48c121b78cdd5b9742d4",
+    "ioc": "7x24.sunshinehui.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "a1eaf75f945c48c121b78cdd5b9742d4",
+    "ioc": "attack.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "a1eaf75f945c48c121b78cdd5b9742d4",
+    "ioc": "quinnemanuel.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://img.striata.com/Nedbank/CASA/RetailEng20110309.jpg",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://img.striata.com/Nedbank/CASA/drk_grn_btm.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://img.striata.com/Nedbank/CASA/drk_grn_tp_cnr.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://img.striata.com/Nedbank/CASA/enote.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://img.striata.com/Nedbank/CASA/estatement.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://img.striata.com/Nedbank/CASA/grn_btm_cnr.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://img.striata.com/Nedbank/CASA/grn_top_cnr.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://img.striata.com/Nedbank/CASA/grn_trust_logo.jpg",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://img.striata.com/Nedbank/CASA/head_ENG.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://img.striata.com/Nedbank/CASA/leaf.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://img.striata.com/Nedbank/CASA/lock1.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://img.striata.com/Nedbank/CASA/lock2.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://img.striata.com/Nedbank/CASA/nedbankgreen_btn.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://img.striata.com/Nedbank/CASA/open_satetement_btm.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://img.striata.com/Nedbank/CASA/register.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://img.striata.com/Nedbank/CASA/tel.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://www.adobe.com",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://www.nedbank.co.za",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://www.nedbank.co.za/website/content/contacts/index.asp",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://www.nedbank.co.za/website/content/corporate/categoryarticles.asp?CategoryID=2&amp;section=2&amp;nav=value",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://www.nedbank.co.za/website/content/enotes/index.asp",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://www.nedbank.co.za/website/content/estatements/index.asp",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://www.nedbank.co.za/website/content/products/product_current_detail.asp?SubSubcatid=6699&amp;Subcatid=708&amp;ProductID=620",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "http://www.nedbank.co.za/website/uploads/terms/EmailDisclaimer.htm",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "img.striata.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "test.enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "www.adobe.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "969d7598acfda674a5a5dace339d62e1",
+    "ioc": "www.nedbank.co.za",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "c54ef468cb31fce5b8d2cf266e01d4a9",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "c54ef468cb31fce5b8d2cf266e01d4a9",
+    "ioc": "morganstanley.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "7048be8afb386131ab8ec3f0a694d560",
+    "ioc": "http://bymcfcnqg.seriesperfor.com",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "7048be8afb386131ab8ec3f0a694d560",
+    "ioc": "bymcfcnqg.seriesperfor.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "7048be8afb386131ab8ec3f0a694d560",
+    "ioc": "ctrl.co.uk",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "7048be8afb386131ab8ec3f0a694d560",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "2e1403392e580669be99acf164d6776e",
+    "ioc": "dtojjfsjmq.educationworldnet.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "2e1403392e580669be99acf164d6776e",
+    "ioc": "victim.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "f0b9ecc6869b31b80acccee9db0e2eb8",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "f0b9ecc6869b31b80acccee9db0e2eb8",
+    "ioc": "miho-nakayama.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "291adb2e40f6dfa8048fd2354345a5cd",
+    "ioc": "http://session-39999757.nationalcity.com.besthaae.at/corporate/onlineservices/TreasuryMgmt/",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "291adb2e40f6dfa8048fd2354345a5cd",
+    "ioc": "http://session-39999757.nationalcity.com/corporate/onlineservices/TreasuryMgmt/",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "291adb2e40f6dfa8048fd2354345a5cd",
+    "ioc": "session-39999757.nationalcity.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "291adb2e40f6dfa8048fd2354345a5cd",
+    "ioc": "session-39999757.nationalcity.com.besthaae.at",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "291adb2e40f6dfa8048fd2354345a5cd",
+    "ioc": "spamassassin.taint.org",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "291adb2e40f6dfa8048fd2354345a5cd",
+    "ioc": "test.enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "1cc25f1c77c07a5c25c31d6051d2583b",
+    "ioc": "mail1.americangreetings.com}attack.com",
+    "ioc_type": "suspicious_domain"
+  },
+  {
+    "email_id": "1cc25f1c77c07a5c25c31d6051d2583b",
+    "ioc": "mq.edu.au",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "1cc25f1c77c07a5c25c31d6051d2583b",
+    "ioc": "stat.math.ethz.ch",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "a5a593d25efec2c8bc89195b2a764787",
+    "ioc": "aol.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "a5a593d25efec2c8bc89195b2a764787",
+    "ioc": "knoxnet.net",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "de38c34d36d6eb16c8a4438cc0474c27",
+    "ioc": "http://www.desjardins.com/fr/votre_caisse/index.jsp",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "de38c34d36d6eb16c8a4438cc0474c27",
+    "ioc": "http://www.philsfeatheredfriends.com/sec/accesdesjardins/auportADPortail/ObtenirPageAccueil.doorigine_or/",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "de38c34d36d6eb16c8a4438cc0474c27",
+    "ioc": "https://accesd.desjardins.com/",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "de38c34d36d6eb16c8a4438cc0474c27",
+    "ioc": "https://accesd.desjardins.com/public/0939/fr_CA_ACCESD/image/bandeau.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "de38c34d36d6eb16c8a4438cc0474c27",
+    "ioc": "https://accesd.desjardins.com/public/0939/fr_CA_ACCESD/image/securite.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "de38c34d36d6eb16c8a4438cc0474c27",
+    "ioc": "accesd.desjardins.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "de38c34d36d6eb16c8a4438cc0474c27",
+    "ioc": "scbit.org",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "de38c34d36d6eb16c8a4438cc0474c27",
+    "ioc": "spamassassin.taint.org",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "de38c34d36d6eb16c8a4438cc0474c27",
+    "ioc": "www.desjardins.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "de38c34d36d6eb16c8a4438cc0474c27",
+    "ioc": "www.philsfeatheredfriends.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "f46c07329f71c52d4145d1c1532804b6",
+    "ioc": "123mail.cl",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "f46c07329f71c52d4145d1c1532804b6",
+    "ioc": "attack.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "cf45f66e0be9644c3d01d5761db1586f",
+    "ioc": "http://www.desjardins.com/fr/votre_caisse/index.jsp",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "cf45f66e0be9644c3d01d5761db1586f",
+    "ioc": "http://www.philsfeatheredfriends.com/sec/accesdesjardins/auportADPortail/ObtenirPageAccueil.doorigine_or/",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "cf45f66e0be9644c3d01d5761db1586f",
+    "ioc": "https://accesd.desjardins.com/",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "cf45f66e0be9644c3d01d5761db1586f",
+    "ioc": "https://accesd.desjardins.com/public/0939/fr_CA_ACCESD/image/bandeau.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "cf45f66e0be9644c3d01d5761db1586f",
+    "ioc": "https://accesd.desjardins.com/public/0939/fr_CA_ACCESD/image/securite.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "cf45f66e0be9644c3d01d5761db1586f",
+    "ioc": "accesd.desjardins.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "cf45f66e0be9644c3d01d5761db1586f",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "cf45f66e0be9644c3d01d5761db1586f",
+    "ioc": "lasermedi.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "cf45f66e0be9644c3d01d5761db1586f",
+    "ioc": "www.desjardins.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "cf45f66e0be9644c3d01d5761db1586f",
+    "ioc": "www.philsfeatheredfriends.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "bb8b8b5a40d60fea3ef57894b0d4ebf7",
+    "ioc": "http://owfajfqruture.com",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "bb8b8b5a40d60fea3ef57894b0d4ebf7",
+    "ioc": "alaskaair.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "bb8b8b5a40d60fea3ef57894b0d4ebf7",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "bb8b8b5a40d60fea3ef57894b0d4ebf7",
+    "ioc": "owfajfqruture.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "1b33daa7e91462db250d87f93c138375",
+    "ioc": "attack.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "1b33daa7e91462db250d87f93c138375",
+    "ioc": "plg.uwaterloo.ca",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "59383a4a7418d7e5f24aa1a200889c31",
+    "ioc": "http://images.paypal.com/en_US/i/logo/email_logo.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "59383a4a7418d7e5f24aa1a200889c31",
+    "ioc": "http://images.paypal.com/en_US/i/scr/bg_clk.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "59383a4a7418d7e5f24aa1a200889c31",
+    "ioc": "http://images.paypal.com/en_US/i/scr/pixel.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "59383a4a7418d7e5f24aa1a200889c31",
+    "ioc": "http://tv-qc.com/phpBB2/login.htm",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "59383a4a7418d7e5f24aa1a200889c31",
+    "ioc": "https://paypal.com/us/secure_verify?ID=pp468",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "59383a4a7418d7e5f24aa1a200889c31",
+    "ioc": "https://www.paypal.com/us",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "59383a4a7418d7e5f24aa1a200889c31",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "59383a4a7418d7e5f24aa1a200889c31",
+    "ioc": "images.paypal.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "59383a4a7418d7e5f24aa1a200889c31",
+    "ioc": "paypal.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "59383a4a7418d7e5f24aa1a200889c31",
+    "ioc": "tv-qc.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "59383a4a7418d7e5f24aa1a200889c31",
+    "ioc": "www.paypal.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "35749c81f0d57cf29b1dd5eee017de10",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "35749c81f0d57cf29b1dd5eee017de10",
+    "ioc": "instinet.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "850d6dffefbf75413076bdf7c6194b3f",
+    "ioc": "http://www.status100.com/mortgage/index34.html",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "850d6dffefbf75413076bdf7c6194b3f",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "850d6dffefbf75413076bdf7c6194b3f",
+    "ioc": "hotmail.com}attack.com",
+    "ioc_type": "suspicious_domain"
+  },
+  {
+    "email_id": "850d6dffefbf75413076bdf7c6194b3f",
+    "ioc": "www.status100.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "73337be073af245c7b4678a7555d7f51",
+    "ioc": "http://ourworld.cs.com/v3xxxx/v3.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "73337be073af245c7b4678a7555d7f51",
+    "ioc": "http://www.nrl-nbr.no/forum/cache/abort.php",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "73337be073af245c7b4678a7555d7f51",
+    "ioc": "attack.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "73337be073af245c7b4678a7555d7f51",
+    "ioc": "mdbe.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "73337be073af245c7b4678a7555d7f51",
+    "ioc": "ourworld.cs.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "73337be073af245c7b4678a7555d7f51",
+    "ioc": "www.nrl-nbr.no",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "809997317ed5bdbb9597032786c86ece",
+    "ioc": "http://gemba.hk/indexxx.html",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "809997317ed5bdbb9597032786c86ece",
+    "ioc": "http://rulesofbiz.hk/2.jpg",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "809997317ed5bdbb9597032786c86ece",
+    "ioc": "bcjlaw.co=",
+    "ioc_type": "suspicious_domain"
+  },
+  {
+    "email_id": "809997317ed5bdbb9597032786c86ece",
+    "ioc": "gemba.hk",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "809997317ed5bdbb9597032786c86ece",
+    "ioc": "info.iwon.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "809997317ed5bdbb9597032786c86ece",
+    "ioc": "rulesofbiz.hk",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "809997317ed5bdbb9597032786c86ece",
+    "ioc": "verner.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "ce56ad70460807cdb3df3553c8b9cbb0",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "ce56ad70460807cdb3df3553c8b9cbb0",
+    "ioc": "houston.rr.com￿attack.com",
+    "ioc_type": "suspicious_domain"
+  },
+  {
+    "email_id": "08d46fd8d77516dbe584743fd640913f",
+    "ioc": "focalsecurity.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "08d46fd8d77516dbe584743fd640913f",
+    "ioc": "victim.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "52e7d884a0365409d617e62a396365db",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "52e7d884a0365409d617e62a396365db",
+    "ioc": "snfmanagement.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "ac0269150c4ecc9618b903b8b9e7b122",
+    "ioc": "http://www.interactive-mailing.com/datacenter.htm",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "ac0269150c4ecc9618b903b8b9e7b122",
+    "ioc": "http://www.webbasedmailing.com",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "ac0269150c4ecc9618b903b8b9e7b122",
+    "ioc": "http://www.webbasedmailing.com/Toners2goLogo.jpg",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "ac0269150c4ecc9618b903b8b9e7b122",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "ac0269150c4ecc9618b903b8b9e7b122",
+    "ioc": "enron.com}attack.com",
+    "ioc_type": "suspicious_domain"
+  },
+  {
+    "email_id": "ac0269150c4ecc9618b903b8b9e7b122",
+    "ioc": "hotmail.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "ac0269150c4ecc9618b903b8b9e7b122",
+    "ioc": "www.interactive-mailing.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "ac0269150c4ecc9618b903b8b9e7b122",
+    "ioc": "www.webbasedmailing.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "dd46249c66aea88b69424469e17a3d24",
+    "ioc": "http://images.paypal.com/en_US/i/logo/email_logo.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "dd46249c66aea88b69424469e17a3d24",
+    "ioc": "http://images.paypal.com/en_US/i/scr/pixel.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "dd46249c66aea88b69424469e17a3d24",
+    "ioc": "http://images.paypal.com/images/bg_clk.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "dd46249c66aea88b69424469e17a3d24",
+    "ioc": "http://images.paypal.com/images/pixel.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "dd46249c66aea88b69424469e17a3d24",
+    "ioc": "http://www.megaglide.com/partner.paypal.com/webscr/",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "dd46249c66aea88b69424469e17a3d24",
+    "ioc": "http://www.paypal.com/securitytips",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "dd46249c66aea88b69424469e17a3d24",
+    "ioc": "anadarko.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "dd46249c66aea88b69424469e17a3d24",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "dd46249c66aea88b69424469e17a3d24",
+    "ioc": "images.paypal.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "dd46249c66aea88b69424469e17a3d24",
+    "ioc": "www.megaglide.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "dd46249c66aea88b69424469e17a3d24",
+    "ioc": "www.paypal.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "da4c01002b149bdeedcacf1700fae486",
+    "ioc": "samba.org",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "da4c01002b149bdeedcacf1700fae486",
+    "ioc": "speedy.uwaterloo.ca",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "199e794fc6a25e42fe9f10c57672d038",
+    "ioc": "attack.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "199e794fc6a25e42fe9f10c57672d038",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "65bcbf395fa66dcc2e9f515d5e55a8fd",
+    "ioc": "attack.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "65bcbf395fa66dcc2e9f515d5e55a8fd",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "b1451fd8af4db344b18685a0d4d4dcc4",
+    "ioc": "http://211.99.37.206:81/ultimatehgh_run/",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "b1451fd8af4db344b18685a0d4d4dcc4",
+    "ioc": "http://211.99.37.206:81/ultimatehgh_run/remove.php?userid=jm@netnoteinc.com",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "b1451fd8af4db344b18685a0d4d4dcc4",
+    "ioc": "211.99.37.206:81",
+    "ioc_type": "ip"
+  },
+  {
+    "email_id": "b1451fd8af4db344b18685a0d4d4dcc4",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "b1451fd8af4db344b18685a0d4d4dcc4",
+    "ioc": "laboratorios-pino.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "b1451fd8af4db344b18685a0d4d4dcc4",
+    "ioc": "211.99.37.206",
+    "ioc_type": "ip"
+  },
+  {
+    "email_id": "5115bdf1d6b3ce08a70b18b899cb72b6",
+    "ioc": "enron.com￿attack.com",
+    "ioc_type": "suspicious_domain"
+  },
+  {
+    "email_id": "5115bdf1d6b3ce08a70b18b899cb72b6",
+    "ioc": "freshrpms.net",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "5c71445cc2ec367b0ebdce38c66560af",
+    "ioc": "http://iageread.com",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "5c71445cc2ec367b0ebdce38c66560af",
+    "ioc": "http://schemas.microsoft.com/office/2004/12/omml",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "5c71445cc2ec367b0ebdce38c66560af",
+    "ioc": "iageread.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "5c71445cc2ec367b0ebdce38c66560af",
+    "ioc": "ilshin.ifc.co.kr",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "5c71445cc2ec367b0ebdce38c66560af",
+    "ioc": "schemas.microsoft.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "5c71445cc2ec367b0ebdce38c66560af",
+    "ioc": "security.enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "5c71445cc2ec367b0ebdce38c66560af",
+    "ioc": "9.0.0.25",
+    "ioc_type": "ip"
+  },
+  {
+    "email_id": "042ab293afb526f43573000fb4fe9035",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "042ab293afb526f43573000fb4fe9035",
+    "ioc": "hawaii.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "042ab293afb526f43573000fb4fe9035",
+    "ioc": "mlswpb.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "30cc220f11c16af1bcf25fd351774102",
+    "ioc": "http://www.us-nma.com/",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "30cc220f11c16af1bcf25fd351774102",
+    "ioc": "aol.com}attack.com",
+    "ioc_type": "suspicious_domain"
+  },
+  {
+    "email_id": "30cc220f11c16af1bcf25fd351774102",
+    "ioc": "example.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "30cc220f11c16af1bcf25fd351774102",
+    "ioc": "philodox.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "30cc220f11c16af1bcf25fd351774102",
+    "ioc": "www.us-nma.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "7266c16c09ba169c654e8806d39c09fb",
+    "ioc": "http://buoon.com",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "7266c16c09ba169c654e8806d39c09fb",
+    "ioc": "http://cgide.com",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "7266c16c09ba169c654e8806d39c09fb",
+    "ioc": "http://csmo.net",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "7266c16c09ba169c654e8806d39c09fb",
+    "ioc": "http://ezurozven.com",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "7266c16c09ba169c654e8806d39c09fb",
+    "ioc": "http://snowqarting.com/micro/7",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "7266c16c09ba169c654e8806d39c09fb",
+    "ioc": "http://thonr.com",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "7266c16c09ba169c654e8806d39c09fb",
+    "ioc": "arches.uga.edu}attack.com",
+    "ioc_type": "suspicious_domain"
+  },
+  {
+    "email_id": "7266c16c09ba169c654e8806d39c09fb",
+    "ioc": "buoon.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "7266c16c09ba169c654e8806d39c09fb",
+    "ioc": "cgide.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "7266c16c09ba169c654e8806d39c09fb",
+    "ioc": "csmo.net",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "7266c16c09ba169c654e8806d39c09fb",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "7266c16c09ba169c654e8806d39c09fb",
+    "ioc": "ezurozven.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "7266c16c09ba169c654e8806d39c09fb",
+    "ioc": "snowqarting.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "7266c16c09ba169c654e8806d39c09fb",
+    "ioc": "thonr.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "2aee4892e334fc13d3763bdb558d998c",
+    "ioc": "http://thinkgeek.com/sf",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "2aee4892e334fc13d3763bdb558d998c",
+    "ioc": "https://lists.sourceforge.net/lists/listinfo/spamassassin-sightings",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "2aee4892e334fc13d3763bdb558d998c",
+    "ioc": "einstein.ssz.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "2aee4892e334fc13d3763bdb558d998c",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "2aee4892e334fc13d3763bdb558d998c",
+    "ioc": "lists.sourceforge.net",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "2aee4892e334fc13d3763bdb558d998c",
+    "ioc": "thinkgeek.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "9c69b4a1fcbbbb4dff9daff01e964a86",
+    "ioc": "bmw.com.ar",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "9c69b4a1fcbbbb4dff9daff01e964a86",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "31428a2ea7ff16c2062f923a6fd0e48d",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "31428a2ea7ff16c2062f923a6fd0e48d",
+    "ioc": "syngenta.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "31956a8d9e1a3108549c521016c4c775",
+    "ioc": "attack.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "31956a8d9e1a3108549c521016c4c775",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "75097809fbc82c1a42417a739385a071",
+    "ioc": "http://www.desjardins.com/fr/votre_caisse/index.jsp",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "75097809fbc82c1a42417a739385a071",
+    "ioc": "http://www.philsfeatheredfriends.com/sec/accesdesjardins/auportADPortail/ObtenirPageAccueil.doorigine_or/",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "75097809fbc82c1a42417a739385a071",
+    "ioc": "https://accesd.desjardins.com/",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "75097809fbc82c1a42417a739385a071",
+    "ioc": "https://accesd.desjardins.com/public/0939/fr_CA_ACCESD/image/bandeau.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "75097809fbc82c1a42417a739385a071",
+    "ioc": "https://accesd.desjardins.com/public/0939/fr_CA_ACCESD/image/securite.gif",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "75097809fbc82c1a42417a739385a071",
+    "ioc": "accesd.desjardins.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "75097809fbc82c1a42417a739385a071",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "75097809fbc82c1a42417a739385a071",
+    "ioc": "grungecafe.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "75097809fbc82c1a42417a739385a071",
+    "ioc": "www.desjardins.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "75097809fbc82c1a42417a739385a071",
+    "ioc": "www.philsfeatheredfriends.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "2111046743ab7f2840be40800e35cd9f",
+    "ioc": "http://thomasmedical.com=",
+    "ioc_type": "url"
+  },
+  {
+    "email_id": "2111046743ab7f2840be40800e35cd9f",
+    "ioc": "enron.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "2111046743ab7f2840be40800e35cd9f",
+    "ioc": "ey.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "2111046743ab7f2840be40800e35cd9f",
+    "ioc": "mail.com",
+    "ioc_type": "domain"
+  },
+  {
+    "email_id": "2111046743ab7f2840be40800e35cd9f",
+    "ioc": "thomasmedical.com=",
+    "ioc_type": "suspicious_domain"
+  }
+]
