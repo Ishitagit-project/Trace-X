@@ -1,69 +1,98 @@
-# 🚀 M2 Backend - Step-by-Step Guide
-
-This guide covers exactly what you need to do right now to test the backend, and what your next steps are for the SIH project.
+# 🚀 M2 Backend — Complete Step-by-Step Work Guide
 
 ---
 
-## 🟢 PHASE 1: Test What We Just Built
-
-Your backend and MongoDB connection are now fully working. Let's test the flow.
-
-### Step 1: Start the server
-Open your VS Code terminal and run:
-```bash
-npm run dev
-```
-*(Note: If `npm` gives a red error, run `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` first, hit Y, then try again).*
-
-You should see:
-```text
-✅ MongoDB connected
-🚀 Server running on http://localhost:5000
-```
-
-### Step 2: Open Postman (or Thunder Client)
-We are going to send a fake "parsed email" to your backend to make sure it saves to MongoDB.
-
-1. **Method:** `POST`
-2. **URL:** `http://localhost:5000/api/emails`
-3. **Headers:** Add a new header with Key: `Content-Type` and Value: `application/json`
-4. **Body:** Select `Raw` and paste everything from the `test/sample-email.json` file inside your project.
-5. **Click Send!**
-
-✅ **Expected Result:** A `201 Created` response saying "Email stored successfully", along with a newly generated MongoDB `_id`.
-
-### Step 3: Retrieve the Email
-1. Copy the `_id` from the response in Step 2.
-2. Change the **Method** to `GET`.
-3. Change the **URL** to: `http://localhost:5000/api/emails/<PASTE_ID_HERE>`
-4. **Click Send!**
-
-✅ **Expected Result:** You will get the full email data back from MongoDB.
-
-*(Check MongoDB Atlas or Compass and you will see an `emails` collection has been created with your data!)*
+## ✅ PHASE 1 — Email API (DONE)
+- Built Express server + MongoDB Atlas connection
+- Designed `Email.js` schema based on M3's exact output format
+- Built `POST /api/emails`, `GET /api/emails`, `GET /api/emails/:id`
+- Successfully uploaded all 50 real parsed emails from M3
 
 ---
 
-## 🟡 PHASE 2: Connect with M3 (The Parser)
-
-Right now, we used a "fake" sample email (`sample-email.json`). The real goal is to get the JSON from the person working on **M3**.
-
-### Step 4: Get M3's actual JSON format
-1. Ask the team member working on **M3**: *"Hey, can you send me a sample of the exact JSON your parser generates?"*
-2. Compare their JSON with your `src/models/Email.js` schema. 
-3. **If their JSON has different field names** (e.g., they use `sender_email` instead of `sender.address`), let me know and we will update the Mongoose schema to match their exact output.
-
-### Step 5: Integration
-Once M3 is ready, their code will automatically send a `POST` request to your `http://localhost:5000/api/emails` API every time an email is uploaded.
+## ✅ PHASE 2 — M3 Integration (DONE)
+- Received `parsed_emails_50.json`, `clean_ioc_relationships.json`,
+  `ioc_pivot_demo.json`, `graph_data.json` from Kajal (M3)
+- Updated schema to match her exact JSON format
+- Tested and confirmed all 50 emails saved successfully
 
 ---
 
-## 🔵 PHASE 3: Build the Rest of the Database (M1, M4, M5, M6)
+## 🟢 COMPLETED MODULES & APIS
 
-Once the Email saving part is 100% working with M3, we need to build the other collections for the rest of the team.
+### 1. Email APIs (`/api/emails`)
+- `POST /api/emails` — Ingest parsed email from M3 (50 sample emails already in DB).
+- `GET /api/emails` — List all emails with pagination & sorting.
+- `GET /api/emails/:id` — Retrieve single email with populated `threatAnalysisId` and `caseId`.
+- `GET /api/emails/search/by-email-id?email_id=...` — Lookup by M3's `email_id`.
 
-When you are ready, just tell me: **"Let's build Phase 3"** and we will add:
+### 2. IOC APIs (`/api/iocs`)
+- `POST /api/iocs` — Save or upsert an IOC with normalization & deduplication.
+- `GET /api/iocs` — List/filter IOCs by `?type=domain&status=active&value=...&emailId=...&caseId=...`.
+- `GET /api/iocs/:id` — Get one IOC with populated geolocation, related emails, and related cases.
+- `PATCH /api/iocs/:id` — M4 enriches geolocation, ASN, ISP, confidence, status, and related links.
+- `GET /api/iocs/:id/pivot` — M4 pivot view to find all emails sharing this indicator.
+- `GET /api/iocs/:id/relationships` — Edges connected to this indicator.
+- `GET /api/iocs/graph` — Full graph (nodes & edges) for M6 visualization.
 
-1. **IOCs Collection (`/api/iocs`)**: For **M4** to investigate IPs, Domains, and URLs.
-2. **Threat Analyses Collection (`/api/analyses`)**: For **M1 & M5** to save their forensic AI reports and threat scores.
-3. **Cases Collection (`/api/cases`)**: For **M6** to display security incidents on the frontend dashboard.
+### 3. Analysis APIs (`/api/analyses`)
+- `POST /api/analyses` — Save M5's AI threat classification and M1's forensic evidence (auto-links to Email).
+- `GET /api/analyses` — List all analyses with filters (`?classification=phishing&minScore=70`).
+- `GET /api/analyses/:emailId` — Get analysis result for an email (supports MongoDB `_id` or M3 `email_id`).
+- `PATCH /api/analyses/:emailId` — Update evidence or scores.
+
+### 4. Case Management APIs (`/api/cases`)
+- `POST /api/cases` — Create a security case (validates referenced emails/IOCs/analyses and updates references).
+- `GET /api/cases` — List cases with filters (`?status=open&priority=high&classification=phishing`).
+- `GET /api/cases/:id` — Full Case detail page for M6 (fully populates related emails, IOCs, and analyses).
+- `PATCH /api/cases/:id` — Change status, priority, or close case (automatically tracks `closedAt`).
+
+### 5. Dashboard Statistics API (`/api/dashboard-stats`)
+- `GET /api/dashboard-stats` — Returns overall metrics for M6 cards and summary charts:
+  ```json
+  {
+    "success": true,
+    "data": {
+      "totalEmails": 50,
+      "totalAnalyzed": 0,
+      "totalThreats": 0,
+      "totalSafeEmails": 0,
+      "totalIOCs": 0,
+      "totalCases": 0,
+      "openCases": 0,
+      "investigatingCases": 0,
+      "closedCases": 0,
+      "highRiskCases": 0
+    }
+  }
+  ```
+
+---
+
+## 🛡️ Data Integrity, Relationships & Indexes
+
+- **Cross-Referenced Schema Architecture:**
+  - `Email` references `Analysis` (`threatAnalysisId`) and `Case` (`caseId`).
+  - `IOC` references `Email` (`sourceEmailId`, `investigation.relatedEmails`) and `Case` (`sourceCaseId`, `investigation.relatedCases`).
+  - `Case` references `Email` (`emailIds`), `IOC` (`iocIds`), and `Analysis` (`analysisIds`).
+  - `Analysis` references `Email` (`emailId`).
+
+- **Consistent API Response Format:**
+  - Success: `{ "success": true, "data": { ... } }`
+  - Error: `{ "success": false, "message": "..." }`
+
+- **Optimized MongoDB Indexes:**
+  - `Email`: `sender`, `receiver`, `domains`, `ips`, `createdAt: -1`
+  - `IOC`: `{ type: 1, normalizedValue: 1 }` (unique), `sourceEmailId: 1`, `sourceCaseId: 1`, `occurrenceCount: -1`
+  - `Analysis`: `{ emailId: 1 }` (unique), `classification: 1`, `threatScore: -1`
+  - `Case`: `status: 1`, `priority: 1`, `createdAt: -1`, `threatScore: -1`
+
+---
+
+## 🟣 PHASE 5: Cloud Deployment (FINAL STEP)
+
+When ready to connect with the full team over the internet:
+1. Push code to GitHub repository.
+2. Link repo to **Render** or **Railway**.
+3. Set environment variables: `PORT=5000` and `MONGODB_URI`.
+4. Provide the public URL (e.g., `https://sih-backend.onrender.com`) to M1, M3, M4, M5, and M6!

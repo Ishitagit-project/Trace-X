@@ -2,7 +2,11 @@ const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
 const errorHandler = require("./middleware/errorHandler");
-const emailRoutes = require("./routes/emailRoutes");
+const emailRoutes     = require("./routes/emailRoutes");
+const iocRoutes       = require("./routes/iocRoutes");
+const analysisRoutes  = require("./routes/analysisRoutes");
+const caseRoutes      = require("./routes/caseRoutes");
+const dashboardRoutes = require("./routes/dashboardRoutes");
 
 const app = express();
 
@@ -21,12 +25,11 @@ app.get("/api/health", (req, res) => {
 });
 
 // ── API Routes ─────────────────────────────────────────────────────────
-app.use("/api/emails", emailRoutes);
-
-// Future routes (uncomment when ready):
-// app.use("/api/iocs", iocRoutes);
-// app.use("/api/analyses", threatAnalysisRoutes);
-// app.use("/api/cases", caseRoutes);
+app.use("/api/emails",          emailRoutes);
+app.use("/api/iocs",            iocRoutes);
+app.use("/api/analyses",        analysisRoutes);
+app.use("/api/cases",           caseRoutes);
+app.use("/api/dashboard-stats", dashboardRoutes);
 
 // ── 404 Handler ────────────────────────────────────────────────────────
 app.use((req, res) => {

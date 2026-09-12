@@ -24,7 +24,9 @@ exports.createEmail = async (req, res, next) => {
  */
 exports.getEmailById = async (req, res, next) => {
   try {
-    const email = await Email.findById(req.params.id);
+    const email = await Email.findById(req.params.id)
+      .populate("threatAnalysisId")
+      .populate("caseId");
 
     if (!email) {
       return res.status(404).json({

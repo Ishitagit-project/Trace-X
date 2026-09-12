@@ -71,7 +71,7 @@ const emailSchema = new mongoose.Schema(
     // Future references (for M1/M4/M5/M6)
     threatAnalysisId: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "ThreatAnalysis",
+      ref: "Analysis",
       default: null,
     },
     caseId: {
@@ -85,10 +85,11 @@ const emailSchema = new mongoose.Schema(
   }
 );
 
-// Basic indexing for faster lookups based on M3's array formats
+// Basic indexing for faster lookups
 emailSchema.index({ sender: 1 });
 emailSchema.index({ receiver: 1 });
 emailSchema.index({ domains: 1 });
 emailSchema.index({ ips: 1 });
+emailSchema.index({ createdAt: -1 });
 
 module.exports = mongoose.model("Email", emailSchema);

@@ -13,19 +13,18 @@ const errorHandler = (err, req, res, next) => {
     }));
     return res.status(400).json({
       success: false,
-      error: "Validation failed",
+      message: `Validation failed: ${fields.map((f) => f.message).join(", ")}`,
       details: fields,
     });
   }
 
   // Mongoose duplicate key (code 11000) → 409 Conflict
   if (err.code === 11000) {
-    const duplicateField = Object.keys(err.keyPattern)[0];
-    const duplicateValue = err.keyValue[duplicateField];
+    const duplicateField = Object.keys(err.keyPattern || {})[0] || "field";
+    const duplicateValue = err.keyValue ? err.keyValue[duplicateField] : "";
     return res.status(409).json({
       success: false,
-      error: "Duplicate entry",
-      message: `An email with ${duplicateField} "${duplicateValue}" already exists.`,
+      message: `Duplicate entry: record with ${duplicateField} "${duplicateValue}" already exists.`,
     });
   }
 
@@ -33,15 +32,14 @@ const errorHandler = (err, req, res, next) => {
   if (err.name === "CastError" && err.kind === "ObjectId") {
     return res.status(400).json({
       success: false,
-      error: "Invalid ID format",
-      message: `"${err.value}" is not a valid ID.`,
+      message: `"${err.value}" is not a valid ID format.`,
     });
   }
 
   // Fallback → 500
   res.status(err.statusCode || 500).json({
     success: false,
-    error: err.message || "Internal Server Error",
+    message: err.message || "Internal Server Error",
   });
 };
 
