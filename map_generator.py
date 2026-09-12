@@ -84,17 +84,37 @@ def _point_for_report(report: dict) -> dict:
 
 def _popup_html(point: dict) -> str:
     location_str = ", ".join(filter(None, [point.get("city"), point.get("region"), point.get("country")])) or "Unknown location"
+    ip = point.get("ip") or "N/A"
+    lat = point.get("lat")
+    lon = point.get("lon")
+    isp = point.get("isp") or "N/A"
+    subject = str(point.get("subject") or "N/A").replace("'", "\\'").replace('"', '&quot;')
+    sender = str(point.get("from") or "N/A").replace("'", "\\'").replace('"', '&quot;')
+    status_upper = point['status'].upper()
+    status_color = '#ff0055' if point['status'] == 'flagged' else ('#ffb703' if point['status'] in ('suspicious', 'unverifiable') else '#00e676')
+
+    copy_payload = f"Device IP: {ip}\\nCoordinates: {lat}, {lon}\\nLocation: {location_str}\\nISP: {isp}\\nSubject: {subject}\\nSender: {sender}\\nStatus: {status_upper}"
+
     return f"""
-    <div style="font-family: sans-serif; font-size: 13px; min-width: 220px;">
-      <b>{point['label_prefix']}</b><br>
-      <b>Status:</b> {point['status'].upper()} &mdash; {point.get('flag_status', 'N/A')}<br>
-      <b>Classification:</b> {point.get('classification', 'N/A')} (score {point.get('threat_score', 'N/A')})<br>
-      <hr style="margin:4px 0;">
-      <b>Subject:</b> {point.get('subject') or 'N/A'}<br>
-      <b>From:</b> {point.get('from') or 'N/A'}<br>
-      <b>IP:</b> {point.get('ip') or 'N/A'}<br>
-      <b>Location:</b> {location_str}<br>
-      <b>ISP/Org:</b> {point.get('isp') or 'N/A'}
+    <div style="font-family: monospace; font-size: 12px; min-width: 250px; color: #e2f1f8; background: #0a0f18; padding: 12px; border-radius: 8px; border: 1px solid #00f2fe; box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);">
+      <b style="color: #00f2fe; text-transform: uppercase;">{point['label_prefix']}</b><br>
+      <div style="margin-top: 6px;"><b>Status:</b> <span style="color: {status_color}; font-weight: bold;">{status_upper}</span></div>
+      <div><b>Classification:</b> {point.get('classification', 'N/A')} (Score: {point.get('threat_score', 'N/A')})</div>
+      <hr style="margin: 8px 0; border-color: rgba(0, 242, 254, 0.25);">
+      <div><b>Subject:</b> {subject}</div>
+      <div><b>From:</b> {sender}</div>
+      <div><b>Device IP:</b> <span style="color: #00f2fe;">{ip}</span></div>
+      <div><b>Location:</b> {location_str}</div>
+      <div><b>ISP / Infra:</b> {isp}</div>
+      <div><b>Coordinates:</b> {lat}, {lon}</div>
+      <div style="margin-top: 10px;">
+        <button onclick="
+          navigator.clipboard.writeText('{copy_payload}');
+          alert('Exact Device Address & Location copied to clipboard!');
+        " style="width: 100%; background: linear-gradient(135deg, #00f2fe, #0088ff); color: #000; border: none; padding: 8px; border-radius: 4px; font-weight: bold; cursor: pointer; font-family: monospace; text-transform: uppercase;">
+          📋 Copy Exact Device Address
+        </button>
+      </div>
     </div>
     """
 
@@ -113,7 +133,7 @@ def generate_map(reports: list, output_path: str = "email_origin_map.html", clus
         m = folium.Map(location=[20, 0], zoom_start=2)
         folium.map.Marker(
             [20, 0],
-            icon=folium.DivIcon(html='<div style="font-size:13px;">No geolocation data available for these emails.</div>')
+            icon=folium.DivIcon(html='<div style="font-size:13px; color:#fff; font-family:monospace;">No geolocation data available for these emails.</div>')
         ).add_to(m)
         m.save(output_path)
         return output_path
@@ -127,23 +147,37 @@ def generate_map(reports: list, output_path: str = "email_origin_map.html", clus
     for p in points:
         folium.Marker(
             location=[p["lat"], p["lon"]],
-            popup=folium.Popup(_popup_html(p), max_width=320),
+            popup=folium.Popup(_popup_html(p), max_width=340),
             tooltip=f"{p['status'].upper()} — {p.get('city') or p.get('country') or p['ip']}",
             icon=folium.Icon(color=STATUS_COLORS.get(p["status"], "blue"), icon="envelope", prefix="fa"),
         ).add_to(target)
 
-    # simple legend, always visible regardless of verdict mix
-    legend_html = """
-    <div style="position: fixed; bottom: 30px; left: 30px; z-index: 9999;
-                background: white; padding: 10px 14px; border: 1px solid #999;
-                border-radius: 6px; font-family: sans-serif; font-size: 13px; color:#222;">
-      <b>Email origin status</b><br>
-      <span style="color:green;">&#9679;</span> Safe &nbsp;
-      <span style="color:orange;">&#9679;</span> Suspicious / unverifiable (MITM) &nbsp;
-      <span style="color:red;">&#9679;</span> Flagged
+    # Dark Theme & Laser Sweep Animation Overlay Injection
+    cyber_style_html = """
+    <style>
+      .leaflet-tile-pane { filter: invert(100%) hue-rotate(190deg) brightness(85%) contrast(120%); }
+      .laser-scan-line {
+        position: fixed; top: 0; left: 0; width: 100%; height: 3px;
+        background: linear-gradient(90deg, transparent, #00f2fe, transparent);
+        box-shadow: 0 0 20px #00f2fe, 0 0 10px #00f2fe; z-index: 99999;
+        pointer-events: none; animation: laserSweep 3s ease-in-out infinite alternate;
+      }
+      @keyframes laserSweep {
+        0% { top: 0%; }
+        100% { top: 100%; }
+      }
+    </style>
+    <div class="laser-scan-line"></div>
+    <div style="position: fixed; bottom: 24px; left: 24px; z-index: 9999;
+                background: rgba(10, 15, 24, 0.9); padding: 12px 16px; border: 1px solid #00f2fe;
+                border-radius: 8px; font-family: monospace; font-size: 13px; color:#e2f1f8; box-shadow: 0 0 20px rgba(0,242,254,0.3);">
+      <b style="color:#00f2fe; text-transform:uppercase;">Trace-X Email Origin Radar</b><br>
+      <span style="color:#00e676;">&#9679;</span> Safe &nbsp;
+      <span style="color:#ffb703;">&#9679;</span> Suspicious / Unverifiable (MITM) &nbsp;
+      <span style="color:#ff0055;">&#9679;</span> Flagged Malicious
     </div>
     """
-    m.get_root().html.add_child(folium.Element(legend_html))
+    m.get_root().html.add_child(folium.Element(cyber_style_html))
 
     m.save(output_path)
     return output_path
