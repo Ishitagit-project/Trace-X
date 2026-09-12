@@ -110,3 +110,69 @@ exports.getEmailByEmailId = async (req, res, next) => {
     next(err);
   }
 };
+
+/**
+ * @desc    Get forensic evidence for the frontend Evidence tab
+ * @route   GET /api/emails/:id/evidence
+ *
+ * Supports both MongoDB ObjectId and M3 email_id string
+ */
+exports.getEmailEvidence = async (req, res, next) => {
+  try {
+    const { id } = req.params;
+    const mongoose = require("mongoose");
+
+    let email = null;
+    if (mongoose.Types.ObjectId.isValid(id)) {
+      email = await Email.findById(id);
+    }
+    if (!email) {
+      email = await Email.findOne({ email_id: id });
+    }
+
+    if (!email) {
+      return res.status(404).json({
+        success: false,
+        message: `No email found with ID "${id}".`,
+      });
+    }
+
+    const headers = email.security_headers || {};
+
+    const evidenceResponse = {
+      emailId: email._id,
+      sender: {
+        from: email.sender || [],
+        replyTo: email.reply_to && email.reply_to.length > 0 ? email.reply_to[0] : "",
+        returnPath: headers.return_path || "",
+      },
+      urls: email.urls || [],
+      content: {
+        text: "",
+        html: "",
+      },
+      headers: {
+        received: headers.received || [],
+        authenticationResults: Array.isArray(headers.authentication_results)
+          ? headers.authentication_results.join("; ")
+          : (headers.authentication_results || ""),
+        spf: Array.isArray(headers.received_spf)
+          ? headers.received_spf.join("; ")
+          : (headers.received_spf || ""),
+        dkim: Array.isArray(headers.dkim_signature)
+          ? headers.dkim_signature.join("; ")
+          : (headers.dkim_signature || ""),
+        dmarc: "",
+        messageId: headers.message_id || "",
+        all: headers,
+      },
+    };
+
+    res.status(200).json({
+      success: true,
+      data: evidenceResponse,
+    });
+  } catch (err) {
+    next(err);
+  }
+};
