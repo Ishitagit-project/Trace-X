@@ -12,21 +12,60 @@ const VALID_CLASSIFICATIONS = [
   "unknown",
 ];
 
+const VALID_RISK_LEVELS = ["low", "medium", "high", "critical", "unknown"];
+
 /**
  * @desc    Save an analysis result (called by M5 after AI classification)
  * @route   POST /api/analyses
- * @body    { emailId, classification, threatScore, confidence,
- *            summary, forensicEvidence, aiEvidence,
- *            recommendations, modelVersion }
+ * @body    { emailId, classification, confidence, riskLevel, threatScore,
+ *            evidence, iocs, summary, investigation, recommendations, modelVersion }
  */
 exports.createAnalysis = async (req, res, next) => {
   try {
-    const { emailId, classification, threatScore } = req.body;
+    let emailId = req.body.emailId || req.body.email_id;
+    let classification = req.body.classification;
+    let threatScore = req.body.threatScore;
+    let riskLevel = req.body.riskLevel || req.body.risk_level;
+    let confidence = req.body.confidence;
+    let summary = req.body.summary;
+    let evidence = req.body.evidence;
+    let iocs = req.body.iocs || req.body.IOCs;
+    let recommendations = req.body.recommendations;
+    let investigation = req.body.investigation && typeof req.body.investigation === "object"
+      ? { ...req.body.investigation }
+      : {};
+
+    // If M5 sent classification as an object containing nested details
+    if (classification && typeof classification === "object") {
+      if (confidence === undefined && classification.confidence !== undefined) {
+        confidence = classification.confidence;
+      }
+      if (!riskLevel && classification.risk_level) {
+        riskLevel = classification.risk_level;
+      }
+      if (!summary && classification.summary) {
+        summary = classification.summary;
+      }
+      if (!evidence && classification.evidence) {
+        evidence = classification.evidence;
+      }
+      if (!iocs && (classification.IOCs || classification.iocs)) {
+        iocs = classification.IOCs || classification.iocs;
+      }
+      classification = classification.classification; // extract string "phishing"
+    }
 
     if (!emailId) {
       return res.status(400).json({
         success: false,
-        message: "Missing required field: emailId",
+        message: "Missing required field: emailId (or email_id)",
+      });
+    }
+
+    if (!classification || typeof classification !== "string") {
+      return res.status(400).json({
+        success: false,
+        message: "Missing required field: classification",
       });
     }
 
@@ -38,12 +77,82 @@ exports.createAnalysis = async (req, res, next) => {
       });
     }
 
-    // Validate threat score range
-    if (threatScore !== undefined && (typeof threatScore !== "number" || threatScore < 0 || threatScore > 100)) {
+    // Validate confidence range (0 to 1)
+    if (confidence !== undefined && confidence !== null && (typeof confidence !== "number" || confidence < 0 || confidence > 1)) {
+      return res.status(400).json({
+        success: false,
+        message: "Confidence must be a number between 0 and 1",
+      });
+    }
+
+    // Validate riskLevel enum if provided
+    if (riskLevel && !VALID_RISK_LEVELS.includes(riskLevel.toLowerCase())) {
+      return res.status(400).json({
+        success: false,
+        message: `Invalid riskLevel "${riskLevel}". Must be one of: ${VALID_RISK_LEVELS.join(", ")}`,
+      });
+    }
+
+    // Validate threat score range if provided
+    if (threatScore !== undefined && threatScore !== null && (typeof threatScore !== "number" || threatScore < 0 || threatScore > 100)) {
       return res.status(400).json({
         success: false,
         message: "Threat score must be a number between 0 and 100",
       });
+    }
+
+    // Bi-directional mapping between threatScore and riskLevel for maximum compatibility
+    if (threatScore === undefined || threatScore === null) {
+      if (riskLevel) {
+        const r = riskLevel.toLowerCase();
+        if (r === "critical") threatScore = 95;
+        else if (r === "high") threatScore = 85;
+        else if (r === "medium") threatScore = 50;
+        else if (r === "low") threatScore = 20;
+        else threatScore = 0;
+      } else {
+        threatScore = 0;
+      }
+    }
+
+    if (!riskLevel) {
+      if (threatScore >= 90) riskLevel = "critical";
+      else if (threatScore >= 70) riskLevel = "high";
+      else if (threatScore >= 40) riskLevel = "medium";
+      else riskLevel = "low";
+    }
+
+    // Normalize IOCs object structure
+    const normalizedIOCs = { emails: [], domains: [], urls: [], ips: [] };
+    if (iocs && typeof iocs === "object") {
+      normalizedIOCs.emails  = iocs.emails || [];
+      normalizedIOCs.domains = iocs.domains || [];
+      normalizedIOCs.urls    = iocs.urls || iocs.URLs || [];
+      normalizedIOCs.ips     = iocs.ips || iocs.IPs || [];
+    }
+
+    // Normalize snake_case keys in investigation
+    if (investigation.recommended_investigation_steps && !investigation.recommendedInvestigationSteps) {
+      investigation.recommendedInvestigationSteps = investigation.recommended_investigation_steps;
+    }
+    if (investigation.final_assessment && !investigation.finalAssessment) {
+      investigation.finalAssessment = investigation.final_assessment;
+    }
+    if (investigation.IOCs && !investigation.iocs) {
+      investigation.iocs = {
+        emails:  investigation.IOCs.emails || [],
+        domains: investigation.IOCs.domains || [],
+        urls:    investigation.IOCs.urls || investigation.IOCs.URLs || [],
+        ips:     investigation.IOCs.ips || investigation.IOCs.IPs || [],
+      };
+    }
+
+    // Bi-directional mapping for recommendations
+    let recs = Array.isArray(recommendations) ? [...recommendations] : [];
+    if (Array.isArray(investigation.recommendedInvestigationSteps) && investigation.recommendedInvestigationSteps.length > 0 && recs.length === 0) {
+      recs = [...investigation.recommendedInvestigationSteps];
+    } else if (recs.length > 0 && (!Array.isArray(investigation.recommendedInvestigationSteps) || investigation.recommendedInvestigationSteps.length === 0)) {
+      investigation.recommendedInvestigationSteps = [...recs];
     }
 
     // Find the email either by MongoDB ObjectId or M3 email_id string
@@ -62,11 +171,19 @@ exports.createAnalysis = async (req, res, next) => {
       });
     }
 
-    // Use actual MongoDB ObjectId for the reference
+    // Prepare complete data
     const analysisData = {
       ...req.body,
       emailId: emailDoc._id,
-      classification: classification ? classification.toLowerCase() : undefined,
+      classification: classification.toLowerCase(),
+      riskLevel: riskLevel.toLowerCase(),
+      threatScore,
+      confidence,
+      summary,
+      evidence,
+      iocs: normalizedIOCs,
+      recommendations: recs,
+      investigation,
     };
 
     const analysis = await Analysis.create(analysisData);
