@@ -15,7 +15,21 @@ router.get("/search/by-email-id", getEmailByEmailId);
 router.get("/:id/evidence", getEmailEvidence);
 
 // CRUD routes
-router.post("/", createEmail);
+const upload = require("../middleware/upload");
+
+router.post("/", (req, res, next) => {
+  // Use multer for multipart/form-data, or pass directly for json
+  upload.single("file")(req, res, (err) => {
+    if (err) {
+      return res.status(400).json({
+        success: false,
+        error: "Upload error",
+        message: err.message,
+      });
+    }
+    next();
+  });
+}, createEmail);
 router.get("/", getAllEmails);
 router.get("/:id", getEmailById);
 

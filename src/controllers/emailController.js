@@ -1,10 +1,124 @@
 const Email = require("../models/Email");
+const IOC = require("../models/IOC");
+const normalizeIOC = require("../utils/normalizeIOC");
+const { parseEmlFile } = require("../services/parserService");
+const fs = require("fs");
 
 /**
- * @desc    Store a parsed email from M3
+ * Helper to normalize and upsert extracted IOCs from parsed email
+ */
+async function saveExtractedIOCs(parsedData, sourceEmailId) {
+  try {
+    const iocEntries = [];
+
+    // URLs
+    if (Array.isArray(parsedData.urls)) {
+      parsedData.urls.forEach((u) => iocEntries.push({ value: u, type: "url" }));
+    }
+
+    // Domains
+    if (Array.isArray(parsedData.domains)) {
+      parsedData.domains.forEach((d) => iocEntries.push({ value: d, type: "domain" }));
+    }
+
+    // IPs
+    if (Array.isArray(parsedData.ips)) {
+      parsedData.ips.forEach((ip) => iocEntries.push({ value: ip, type: "ip" }));
+    }
+
+    // Senders & receivers as email IOCs
+    if (Array.isArray(parsedData.sender)) {
+      parsedData.sender.forEach((em) => iocEntries.push({ value: em, type: "email" }));
+    }
+    if (Array.isArray(parsedData.receiver)) {
+      parsedData.receiver.forEach((em) => iocEntries.push({ value: em, type: "email" }));
+    }
+
+    for (const item of iocEntries) {
+      if (!item.value) continue;
+      const normalized = normalizeIOC(item.value, item.type);
+      if (!normalized) continue;
+
+      await IOC.findOneAndUpdate(
+        { normalizedValue: normalized, type: item.type },
+        {
+          $setOnInsert: {
+            value: item.value,
+            normalizedValue: normalized,
+            type: item.type,
+            firstSeen: new Date(),
+            sourceEmailId: sourceEmailId,
+          },
+          $set: { lastSeen: new Date() },
+          $inc: { occurrenceCount: 1 },
+          $addToSet: { "investigation.relatedEmails": sourceEmailId },
+        },
+        { upsert: true, setDefaultsOnInsert: true }
+      );
+    }
+  } catch (err) {
+    console.error("Warning: Error saving extracted IOCs:", err.message);
+  }
+}
+
+/**
+ * @desc    Store a parsed email from M3 or upload an .eml file
  * @route   POST /api/emails
  */
 exports.createEmail = async (req, res, next) => {
+  // If an .eml file was uploaded via multipart/form-data
+  if (req.file) {
+    const filePath = req.file.path;
+
+    try {
+      // 1. Run M3's Python parser
+      const parsedData = await parseEmlFile(filePath);
+
+      // 2. Ensure unique email_id (if existing email with this ID exists, append timestamp)
+      let uniqueEmailId = parsedData.email_id || req.file.originalname.replace(/\.eml$/i, "");
+      const existing = await Email.findOne({ email_id: uniqueEmailId });
+      if (existing) {
+        uniqueEmailId = `${uniqueEmailId}_${Date.now()}`;
+      }
+      parsedData.email_id = uniqueEmailId;
+
+      // 3. Save parsed email into MongoDB
+      const email = await Email.create(parsedData);
+
+      // 4. Save/normalize extracted IOCs in parallel/background
+      await saveExtractedIOCs(parsedData, email._id);
+
+      // 5. Respond with frontend-expected structure
+      return res.status(201).json({
+        success: true,
+        message: "Email uploaded and parsed successfully",
+        data: {
+          emailId: email._id,
+          filename: req.file.originalname,
+          subject: email.subject || "",
+          sender: Array.isArray(email.sender) ? email.sender.join(", ") : email.sender || "",
+          createdAt: email.createdAt,
+        },
+      });
+    } catch (err) {
+      return res.status(500).json({
+        success: false,
+        error: "EML parsing/upload error",
+        message: err.message,
+      });
+    } finally {
+      // Ensure uploaded temp file is always deleted
+      if (fs.existsSync(filePath)) {
+        try {
+          fs.unlinkSync(filePath);
+        } catch (cleanupErr) {
+          console.error("Failed to delete temp file:", cleanupErr.message);
+        }
+      }
+    }
+  }
+
+  // Fallback: Existing raw JSON body handling
   try {
     const email = await Email.create(req.body);
 

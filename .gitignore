@@ -20,3 +20,12 @@ Thumbs.db
 # Build
 dist/
 build/
+
+# Uploads & Temp
+uploads/
+*.eml
+
+# Python cache
+__pycache__/
+*.pyc
+
