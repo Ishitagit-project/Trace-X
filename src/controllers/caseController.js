@@ -93,9 +93,15 @@ exports.createCase = async (req, res, next) => {
       await Email.updateMany({ _id: { $in: emailIds } }, { $set: { caseId: newCase._id } });
     }
 
-    // Update referenced IOCs with sourceCaseId
+    // Update referenced IOCs with sourceCaseId and addToSet investigation.relatedCases
     if (iocIds && iocIds.length > 0) {
-      await IOC.updateMany({ _id: { $in: iocIds } }, { $set: { sourceCaseId: newCase._id } });
+      await IOC.updateMany(
+        { _id: { $in: iocIds } },
+        {
+          $set: { sourceCaseId: newCase._id },
+          $addToSet: { "investigation.relatedCases": newCase._id },
+        }
+      );
     }
 
     res.status(201).json({
@@ -226,6 +232,16 @@ exports.updateCase = async (req, res, next) => {
         error: "Case not found",
         message: `No case exists with id "${req.params.id}".`,
       });
+    }
+
+    // If iocIds are updated, ensure those IOCs also have this case linked
+    if (updates.iocIds && Array.isArray(updates.iocIds) && updates.iocIds.length > 0) {
+      await IOC.updateMany(
+        { _id: { $in: updates.iocIds } },
+        {
+          $addToSet: { "investigation.relatedCases": updatedCase._id },
+        }
+      );
     }
 
     res.status(200).json({

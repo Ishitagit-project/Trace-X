@@ -89,9 +89,12 @@ exports.getAllIOCs = async (req, res, next) => {
       filter["investigation.relatedEmails"] = emailId;
     }
 
-    // Filter by case ID
+    // Filter by case ID (supports both sourceCaseId and investigation.relatedCases)
     if (caseId) {
-      filter["investigation.relatedCases"] = caseId;
+      filter.$or = [
+        { sourceCaseId: caseId },
+        { "investigation.relatedCases": caseId },
+      ];
     }
 
     const pageNum  = Math.max(parseInt(page)  || 1,  1);
